@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from www.emmanuelsolis.com/cheatsheets.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 02 Aug 2025 18:43:42 GMT -->
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>CheatSheets | Emmanuel Solis</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="vendor/aos/aos.css" rel="stylesheet">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- Open Graph meta tags -->
+  <meta property="og:title" content="Hacking Cheatsheets">
+  <meta property="og:description" content="Hacking cheatsheets for different purposes.">
+  <meta property="og:image" content="img/favicon.png">
+  <meta property="og:url" content="cheatsheets.html">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card meta tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Hacking Cheatsheets">
+  <meta name="twitter:description" content="Hacking cheatsheets for different purposes.">
+  <meta name="twitter:image" content="img/favicon.png">
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index-2.html">Emmanuel Solis</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="https://www.linkedin.com/in/emmasolis/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://github.com/emmasolis1" target="_blank" class="github"><i class="bx bxl-github"></i></a>
+        </div>
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="index-2.html" class="nav-link scrollto"><i class="bi bi-house navicon"></i>Home</a></li>
+          <li><a href="resume.html" class="nav-link scrollto"><i class="bi bi-file-earmark-text"></i> <span>Resume</span></a></li>
+          <li><a href="portfolio.html" class="nav-link scrollto"><i class="bi bi-images navicon navicon"></i><span>Portfolio</span></a></li>
+          <li><a href="https://coff.ee/emmanuelsolis" target="_blank" class="nav-link scrollto"><i class="bi bi-heart navicon"></i>Buy Me a Coffee</a></li>
+          <li class="dropdown">
+            <a href="cheatsheets.html" class="nav-link scrollto active" onclick="toggleSubmenu(event)"><i class="bi bi-hdd-stack navicon"></i>Cheatsheets <span class="arrow">►</span></a>
+            <ul id="submenu" class="submenu">
+              <li><a href="ad_pentesting.html" class="nav-link scrollto"><i class="bi bi-shield-lock navicon"></i>Active Directory Pentesting</a></li>
+              <li><a href="mobile_pentesting.html" class="nav-link scrollto"><i class="bi bi-phone navicon"></i>Mobile Pentesting</a></li>
+              <li><a href="oscp.html" class="nav-link scrollto"><img src="img/oscp_icon.png" alt="OSCP Icon" style="width: 28px; height: auto; vertical-align: middle; margin-right: 4px;">OSCP+</a></li>
+              <li><a href="oswp.html" class="nav-link scrollto"><img src="img/oswp_icon.png" alt="OSWP Icon" style="width: 28px; height: auto; vertical-align: middle; margin-right: 4px;">OSWP</a></li>
+              <li><a href="pjmt.html" class="nav-link scrollto"><img src="img/pjmt_icon.png" alt="PJMT Icon" style="width: 28px; height: auto; vertical-align: middle; margin-right: 4px;">PJMT</a></li>
+              <li><a href="red_teaming.html" class="nav-link scrollto"><i class="bi bi-shield-lock navicon"></i>Red Teaming</a></li>
+              <li><a href="security_plus.html" class="nav-link scrollto"><img src="img/security_icon.png" alt="Security+ Icon" style="width: 28px; height: auto; vertical-align: middle; margin-right: 4px;">Security+</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>CheatSheets</h2>
+          <p>
+            Explore my collection of essential cheatsheets, meticulously crafted to streamline your learning and enhance your skills. Each project represents a vital aspect of my expertise, designed to aid both beginners and experienced professionals in their journey.
+          </p>
+        </div>
+
+        <div class="row" data-aos="fade-up">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-certifications">Certifications</li>
+              <li data-filter=".filter-job-roles">Job Roles</li>
+              <li data-filter=".filter-skills">Skills</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-job-roles">
+            <div class="work-box">
+              <a href="./img/ad-logo.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img" style="width: 100%; height: 300px; display: flex; justify-content: center; align-items: center; background-color: #f8f9fa; overflow: hidden;">
+                  <img src="./img/ad-logo.jpg" alt="eJPT Logo" class="img-fluid" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Active Directory Pentesting</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Job Roles</span> / <span class="w-date">10 May, 2022</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="oscp.html"><span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-skills">
+            <div class="work-box">
+              <a href="./img/binaryexploitation-logo.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img" style="width: 100%; height: 300px; display: flex; justify-content: center; align-items: center; background-color: #f8f9fa; overflow: hidden;">
+                  <img src="./img/binaryexploitation-logo.png" alt="eJPT Logo" class="img-fluid" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Binary Exploitation</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Skills</span> / <span class="w-date">10 May, 2022</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="oscp.html"><span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-certifications">
+            <div class="work-box">
+              <a href="./img/crto-logo.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img" style="width: 100%; height: 300px; display: flex; justify-content: center; align-items: center; background-color: #f8f9fa; overflow: hidden;">
+                  <img src="./img/crto-logo.png" alt="eJPT Logo" class="img-fluid" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">CRTO</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Certifications</span> / <span class="w-date">10 May, 2022</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="oscp.html"><span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-skills">
+            <div class="work-box">
+              <a href="./img/cryptography-logo.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img" style="width: 100%; height: 300px; display: flex; justify-content: center; align-items: center; background-color: #f8f9fa; overflow: hidden;">
+                  <img src="./img/cryptography-logo.jpg" alt="eJPT Logo" class="img-fluid" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Cryptography</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Skills</span> / <span class="w-date">10 May, 2022</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="oscp.html"><span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-certifications">
+            <div class="work-box">
+              <a href="./img/ejpt-logo.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img" style="width: 100%; height: 300px; display: flex; justify-content: center; align-items: center; background-color: #f8f9fa; overflow: hidden;">
+                  <img src="./img/ejpt-logo.png" alt="eJPT Logo" class="img-fluid" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">eJPT</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Certifications</span> / <span class="w-date">10 May, 2022</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="oscp.html"><span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+          
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-certifications">
+            <div class="work-box">
+              <a href="./img/ewpt-logo.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img" style="width: 100%; height: 300px; display: flex; justify-content: center; align-items: center; background-color: #f8f9fa; overflow: hidden;">
+                  <img src="./img/ewpt-logo.png" alt="eWPT Logo" class="img-fluid" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">eWPT</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Certifications</span> / <span class="w-date">10 May, 2022</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="oscp.html"><span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>   -->
+
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-skills">
+            <div class="work-box">
+              <a href="./img/malwareanalysis-logo.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img" style="width: 100%; height: 300px; display: flex; justify-content: center; align-items: center; background-color: #f8f9fa; overflow: hidden;">
+                  <img src="./img/malwareanalysis-logo.png" alt="OSCP Logo" class="img-fluid" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Malware Analysis</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Skills</span> / <span class="w-date">10 May, 2022</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="malware_analysis.html"><span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-job-roles">
+            <div class="work-box">
+              <a href="img/mobilepentesting-logo.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img" style="width: 100%; height: 300px; display: flex; justify-content: center; align-items: center; background-color: #f8f9fa; overflow: hidden;">
+                  <img src="img/mobilepentesting-logo.jpg" alt="OSCP Logo" class="img-fluid" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Mobile Pentesting</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Job Roles</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="mobile_pentesting.html"><span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-job-roles">
+            <div class="work-box">
+              <a href="./img/networkpentesting-logo.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img" style="width: 100%; height: 300px; display: flex; justify-content: center; align-items: center; background-color: #f8f9fa; overflow: hidden;">
+                  <img src="./img/networkpentesting-logo.png" alt="OSCP Logo" class="img-fluid" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Network Pentesting</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Job Roles</span> / <span class="w-date">10 May, 2022</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="oscp.html"><span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-certifications">
+            <div class="work-box">
+              <a href="img/oscp-logo.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img" style="width: 100%; height: 300px; display: flex; justify-content: center; align-items: center; background-color: #f8f9fa; overflow: hidden;">
+                  <img src="img/oscp_plus.svg" alt="OSCP Logo" class="img-fluid" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">OSCP+</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Certifications</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="oscp.html"><span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6 portfolio-item filter-certifications">
+            <div class="work-box">
+              <a href="img/oswp-logo.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img" style="width: 100%; height: 300px; display: flex; justify-content: center; align-items: center; background-color: #f8f9fa; overflow: hidden;">
+                  <img src="img/oswp-logo.png" alt="OSWP Logo" class="img-fluid" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">OSWP</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Certifications</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="oswp.html"><span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>          
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-certifications">
+            <div class="work-box">
+              <a href="img/pjmt_icon.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img" style="width: 100%; height: 300px; display: flex; justify-content: center; align-items: center; background-color: #f8f9fa; overflow: hidden;">
+                  <img src="img/pjmt_icon.png" alt="eJPT Logo" class="img-fluid" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">PJMT</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Certifications</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="pjmt.html"><span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-job-roles">
+            <div class="work-box">
+              <a href="./img/redteaming-logo.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img" style="width: 100%; height: 300px; display: flex; justify-content: center; align-items: center; background-color: #f8f9fa; overflow: hidden;">
+                  <img src="./img/redteaming-logo.png" alt="OSCP Logo" class="img-fluid" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Red Teaming</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Job Roles</span> / <span class="w-date">10 May, 2022</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="oscp.html"><span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-skills">
+            <div class="work-box">
+              <a href="./img/reverseengineering-logo.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img" style="width: 100%; height: 300px; display: flex; justify-content: center; align-items: center; background-color: #f8f9fa; overflow: hidden;">
+                  <img src="./img/reverseengineering-logo.png" alt="eJPT Logo" class="img-fluid" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Reverse Engineering</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Skills</span> / <span class="w-date">10 May, 2022</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="oscp.html"><span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-certifications">
+            <div class="work-box">
+              <a href="img/security_icon.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img" style="width: 100%; height: 300px; display: flex; justify-content: center; align-items: center; background-color: #f8f9fa; overflow: hidden;">
+                  <img src="img/security_icon.png" alt="eJPT Logo" class="img-fluid" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Security+</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Certifications</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="security_plus.html"><span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-job-roles">
+            <div class="work-box">
+              <a href="./img/webpentesting-logo.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img" style="width: 100%; height: 300px; display: flex; justify-content: center; align-items: center; background-color: #f8f9fa; overflow: hidden;">
+                  <img src="./img/webpentesting-logo.png" alt="OSCP Logo" class="img-fluid" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Web Pentesting</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Job Roles</span> / <span class="w-date">10 May, 2022</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="oscp.html"><span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-job-roles">
+            <div class="work-box">
+              <a href="./img/wifipentesting-logo.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img" style="width: 100%; height: 300px; display: flex; justify-content: center; align-items: center; background-color: #f8f9fa; overflow: hidden;">
+                  <img src="./img/wifipentesting-logo.png" alt="OSCP Logo" class="img-fluid" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">WiFi Pentesting</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Job Roles</span> / <span class="w-date">10 May, 2022</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="oscp.html"><span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="credits">
+        <!-- Add icon and links to UCR -->
+        <p>
+          &copy; Emmanuel Solis<br>
+          Pentester &amp; Red Teamer
+        </p>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="vendor/purecounter/purecounter.js"></script>
+  <script src="vendor/aos/aos.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="vendor/typed.js/typed.min.js"></script>
+  <script src="vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="js/main.js"></script>
+
+  <script>
+    function toggleSubmenu(event) {
+      event.preventDefault(); // Prevents navigation
+      const submenu = event.currentTarget.nextElementSibling;
+      const arrow = event.currentTarget.querySelector('.arrow');
+
+      submenu.classList.toggle('open'); // Toggle the submenu visibility
+      // Rotate the arrow based on whether the submenu is open
+      if (submenu.classList.contains('open')) {
+          arrow.style.transform = 'rotate(90deg)'; // Arrow points right when closed
+      } else {
+          arrow.style.transform = 'rotate(0deg)';  // Arrow points down when open
+      }
+    }
+  </script>
+
+</body>
+
+
+<!-- Mirrored from www.emmanuelsolis.com/cheatsheets.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 02 Aug 2025 18:43:44 GMT -->
+</html>

